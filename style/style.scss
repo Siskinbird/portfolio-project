@@ -11,8 +11,34 @@
 @import "./flex-grid";
 @import "./icons";
 @import "./interface";
-
-
-
 @import "./media";
 
+.container {
+    //margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.preloader {
+    height: 100vh;
+    background-color: #38384e;
+    &-ray {
+        height: 4px;
+        border-radius: 6px;
+        background-color: white;
+        animation-name: progress;
+        animation-duration: 4s;
+    }
+}
+
+
+@keyframes progress {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}

@@ -355,4 +355,30 @@ button {
   border: none;
 }
 
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.preloader {
+  height: 100vh;
+  background-color: #38384e;
+}
+.preloader-ray {
+  height: 4px;
+  border-radius: 6px;
+  background-color: white;
+  animation-name: progress;
+  animation-duration: 4s;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
