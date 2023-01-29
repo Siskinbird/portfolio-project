@@ -24,7 +24,9 @@
     height: 100vh;
     background-color: #38384e;
     &-ray {
-        height: 4px;
+        position: relative;
+        top: 50%;
+        height: 2px;
         border-radius: 6px;
         background-color: white;
         animation-name: progress;
