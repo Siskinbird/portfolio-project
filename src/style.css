@@ -355,6 +355,11 @@ button {
   border: none;
 }
 
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
 .container {
   padding-left: 40px;
   padding-right: 40px;
@@ -363,23 +368,79 @@ button {
 .preloader {
   height: 100vh;
   background-color: #38384e;
+  overflow-x: hidden;
 }
 .preloader-ray {
   position: relative;
   top: 50%;
-  height: 2px;
+  height: 4px;
   border-radius: 6px;
-  background-color: white;
-  animation-name: progress;
-  animation-duration: 4s;
+  background-color: #f6cb1e;
+  animation: animateRay 3s linear forwards;
 }
 
-@keyframes progress {
+@keyframes animateRay {
   from {
-    width: 0%;
+    transform: translateX(-100%);
   }
   to {
-    width: 100%;
+    transform: translateX(100%);
+  }
+}
+.box {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: #ff3366;
+  position: absolute;
+  top: 100px;
+  left: 323px;
+  z-index: 2;
+}
+
+.hero-text,
+.outline {
+  color: #fff;
+  font-size: 4rem;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.outline {
+  position: absolute;
+  left: 430px;
+  top: 120px;
+  z-index: 3;
+  color: transparent;
+}
+
+.hero-text {
+  position: absolute;
+  left: 430px;
+  top: 120px;
+  z-index: 1;
+}
+
+.slide-left {
+  -webkit-animation: slide-left 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+  animation: slide-left 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    transform: translateX(1600px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(1600px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
