@@ -16,7 +16,15 @@
 
 body {
     overflow-x: hidden;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #38384e;
+    color: white;
+}
+
+#wrapper {
+    display: none;
+    transition: opacity 1s ease-in;
+
 }
 
 .container {
@@ -90,8 +98,6 @@ body {
 }
 
 .slide-left {
-    -webkit-animation: slide-left 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
-    both;
     animation: slide-left 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
 
@@ -109,12 +115,90 @@ body {
         transform: scale(1);
         opacity: 1;
     }
-    50% {
+    13% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    26% {
         transform: scale(1.1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
         opacity: 1;
     }
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+.sidebar {
+    text-transform: uppercase;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #333342;
+
+    &-head {
+        background: url(/resources/img/circle.png) -46px -169px no-repeat;
+        &__logo {
+            margin-top: 100px;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            z-index: 2;
+            border: 6px solid #ffffff;
+            background: url(https://klike.net/uploads/posts/2022-07/1657520750_2.jpg) 0 0/100% 100% no-repeat;
+        }
+        &-links {
+            flex: 1;
+        }
+    }
+
+    &-head-links__link {
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        color: #868686;
+        overflow: visible;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: .3s ease-in-out all;
+        font-weight: 600;
+        h5{
+            padding-left: 16px;
+
+        }
+
+        &:hover {
+            color: #5AB159;
+            font-weight: 200;
+            svg {
+                fill: #5AB159;
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-bottom: 1px solid #4b4b4b;
+        }
+        svg {
+            fill: #ffffff;
+            transition: .3s ease-in-out all;
+        }
+
+    }
+    &-social {
+        gap: 15px;
+        margin: 0 auto 15px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
     }
 }
