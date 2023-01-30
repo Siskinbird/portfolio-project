@@ -365,6 +365,10 @@ body {
   padding-right: 40px;
 }
 
+#preloader {
+  transition: opacity 1s ease-out;
+}
+
 .preloader {
   height: 100vh;
   background-color: #38384e;
@@ -372,7 +376,7 @@ body {
 }
 .preloader-ray {
   position: relative;
-  top: 50%;
+  top: 224px;
   height: 4px;
   border-radius: 6px;
   background-color: #f6cb1e;
@@ -393,8 +397,10 @@ body {
   border-radius: 50%;
   background-color: #ff3366;
   position: absolute;
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
   top: 100px;
-  left: 323px;
+  left: 223px;
   z-index: 2;
 }
 
@@ -409,7 +415,7 @@ body {
 
 .outline {
   position: absolute;
-  left: 430px;
+  left: 330px;
   top: 120px;
   z-index: 3;
   color: transparent;
@@ -417,7 +423,7 @@ body {
 
 .hero-text {
   position: absolute;
-  left: 430px;
+  left: 330px;
   top: 120px;
   z-index: 1;
 }
@@ -427,7 +433,7 @@ body {
   animation: slide-left 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
 
-@-webkit-keyframes slide-left {
+@keyframes slide-left {
   0% {
     transform: translateX(1600px);
   }
@@ -435,12 +441,18 @@ body {
     transform: translateX(0);
   }
 }
-@keyframes slide-left {
+@keyframes pulsate {
   0% {
-    transform: translateX(1600px);
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
   }
   100% {
-    transform: translateX(0);
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
