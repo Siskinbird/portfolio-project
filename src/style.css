@@ -411,7 +411,7 @@ body {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  background-color: #ff3366;
+  background-color: #5AB159;
   position: absolute;
   animation: pulsate 1s ease-out;
   animation-iteration-count: infinite;
@@ -535,10 +535,6 @@ body {
 .sidebar-social {
   gap: 15px;
   margin: 0 auto 15px;
-}
-.sidebar-social img {
-  width: 24px;
-  height: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
