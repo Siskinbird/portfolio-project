@@ -142,24 +142,29 @@ body {
     background-color: #333342;
 
     &-head {
-        background: url(/resources/img/circle.png) -46px -169px no-repeat;
+        background: url(/resources/img/circle.png) -72px -220px no-repeat;
         &__logo {
-            margin-top: 100px;
-            width: 130px;
-            height: 130px;
+            margin-top: 66px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             z-index: 2;
             border: 6px solid $white;
             background: url(https://klike.net/uploads/posts/2022-07/1657520750_2.jpg) 0 0/100% 100% no-repeat;
         }
+        &__title {
+            letter-spacing: 4px;
+            margin-top: 14px;
+            font-weight: 200;
+        }
         &-links {
             flex: 1;
+            margin-top: 30px;
         }
     }
 
     &-head-links__link {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 27px;
         position: relative;
         color: $link-gray;
         letter-spacing: 2px;
@@ -168,7 +173,7 @@ body {
         font-weight: 600;
         h5{
             padding-left: 16px;
-
+            margin: 18px 0;
         }
 
         &:hover {

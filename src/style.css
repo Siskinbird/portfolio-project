@@ -486,23 +486,28 @@ body {
   background-color: #333342;
 }
 .sidebar-head {
-  background: url(/resources/img/circle.png) -46px -169px no-repeat;
+  background: url(/resources/img/circle.png) -72px -220px no-repeat;
 }
 .sidebar-head__logo {
-  margin-top: 100px;
-  width: 130px;
-  height: 130px;
+  margin-top: 66px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   z-index: 2;
   border: 6px solid #FFFFFF;
   background: url(https://klike.net/uploads/posts/2022-07/1657520750_2.jpg) 0 0/100% 100% no-repeat;
 }
+.sidebar-head__title {
+  letter-spacing: 4px;
+  margin-top: 14px;
+  font-weight: 200;
+}
 .sidebar-head-links {
   flex: 1;
+  margin-top: 30px;
 }
 .sidebar-head-links__link {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 27px;
   position: relative;
   color: #868686;
   letter-spacing: 2px;
@@ -512,6 +517,7 @@ body {
 }
 .sidebar-head-links__link h5 {
   padding-left: 16px;
+  margin: 18px 0;
 }
 .sidebar-head-links__link:hover {
   color: #5AB159;
