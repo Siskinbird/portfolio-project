@@ -24,6 +24,7 @@ body {
 #wrapper {
     display: none;
     transition: opacity 1s ease-in;
+    overflow: hidden;
 
 }
 
@@ -161,7 +162,6 @@ body {
         padding-right: 20px;
         position: relative;
         color: $link-gray;
-        overflow: visible;
         letter-spacing: 2px;
         cursor: pointer;
         transition: .3s ease-in-out all;
@@ -200,8 +200,28 @@ body {
 }
 /**CONTENT**/
 
+.test {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: contain;
+    overflow: hidden;
+    width: 890px;
+    height: 833px;
+}
+
 .content {
     width: 100%;
     height: 100vh;
-    background: url(/resources/img/bigcircle.png)  422px -472px no-repeat;
+    overflow-x: hidden;
+    //background: url(/resources/img/bigcircle.png) -200% 200% no-repeat;
+    &-circle {
+        position: relative;
+        bottom: 24%;
+        right: -21%;
+        width: 900px;
+        height: 900px;
+        border-radius: 50%;
+        background-color: #333342;
+    }
 }
