@@ -1,1 +1,19 @@
 // Иконки SVG
+%icon-standard {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: center;
+  margin: 0;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  z-index: 2;
+}
+
+.v-icon {
+  &-telegram {
+    @extend %icon-standard;
+    mask: url("../resources/img/socials/Telegram.svg");
+  }
+}
