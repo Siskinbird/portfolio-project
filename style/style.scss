@@ -146,7 +146,7 @@ body {
     background-color: #333342;
 
     &-head {
-        background: url(/resources/img/circle.png) -72px -220px no-repeat;
+        background: url('../resources/img/circle.png') -72px -220px no-repeat;
         &__logo {
             margin-top: 66px;
             width: 100px;
@@ -246,7 +246,7 @@ body {
             height: 500px;
             border-radius: 50%;
             border: 4px solid $yellow-primary;
-            background: url("/resources/img/morty.png") center / contain no-repeat;
+            background: url("../resources/img/morty.png") center / contain no-repeat;
         }
     }
 }
