@@ -7,6 +7,6 @@ setTimeout(function() {
         wrapper.style.display = "block";
         wrapper.style.opacity = 1;
     }, 1000);
-}, 5000);
+}, 3000);
 
 console.log('My App!');

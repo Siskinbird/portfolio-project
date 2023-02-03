@@ -37,9 +37,8 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
 /* Grouping content
@@ -358,20 +357,68 @@ ul {
   justify-content: center;
 }
 
-.v-icon-telegram {
+.v-icon-services, .v-icon-portfolio, .v-icon-home, .v-icon-contacts, .v-icon-blogs, .v-icon-about, .v-icon-instagram, .v-icon-linkedin, .v-icon-youtube, .v-icon-git, .v-icon-telegram {
   width: 24px;
   height: 24px;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   margin: 0;
   mask-position: center;
+  -webkit-mask-position: center;
   mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   mask-size: contain;
-  z-index: 2;
+  -webkit-mask-size: contain;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+.v-icon-services:hover, .v-icon-portfolio:hover, .v-icon-home:hover, .v-icon-contacts:hover, .v-icon-blogs:hover, .v-icon-about:hover, .v-icon-instagram:hover, .v-icon-linkedin:hover, .v-icon-youtube:hover, .v-icon-git:hover, .v-icon-telegram:hover {
+  background-color: #5AB159;
 }
 
 .v-icon-telegram {
-  mask: url("../resources/img/socials/Telegram.svg");
+  mask-image: url("../resources/img/socials/Telegram.svg");
+  -webkit-mask-image: url("../resources/img/socials/Telegram.svg");
+}
+.v-icon-git {
+  mask-image: url("../resources/img/socials/Telegram.svg");
+  -webkit-mask-image: url("../resources/img/socials/GitHub.svg");
+}
+.v-icon-youtube {
+  mask-image: url("../resources/img/socials/Telegram.svg");
+  -webkit-mask-image: url("../resources/img/socials/youtube.svg");
+}
+.v-icon-linkedin {
+  mask-image: url("../resources/img/socials/Telegram.svg");
+  -webkit-mask-image: url("../resources/img/socials/LinkedIn.svg");
+}
+.v-icon-instagram {
+  mask-image: url("../resources/img/socials/Telegram.svg");
+  -webkit-mask-image: url("../resources/img/socials/Instagram.svg");
+}
+.v-icon-about {
+  mask-image: url("../resources/img/nav-icons/about.svg");
+  -webkit-mask-image: url("../resources/img/nav-icons/about.svg");
+}
+.v-icon-blogs {
+  mask-image: url("../resources/img/nav-icons/blogs.svg");
+  -webkit-mask-image: url("../resources/img/nav-icons/blogs.svg");
+}
+.v-icon-contacts {
+  mask-image: url("../resources/img/nav-icons/contacts.svg");
+  -webkit-mask-image: url("../resources/img/nav-icons/contacts.svg");
+}
+.v-icon-home {
+  mask-image: url("../resources/img/nav-icons/home.svg");
+  -webkit-mask-image: url("../resources/img/nav-icons/home.svg");
+}
+.v-icon-portfolio {
+  mask-image: url("../resources/img/nav-icons/portfolio.svg");
+  -webkit-mask-image: url("../resources/img/nav-icons/portfolio.svg");
+}
+.v-icon-services {
+  mask-image: url("../resources/img/nav-icons/services.svg");
+  -webkit-mask-image: url("../resources/img/nav-icons/services.svg");
 }
 
 a {
@@ -453,7 +500,7 @@ body {
 .outline {
   position: absolute;
   left: 330px;
-  top: 120px;
+  top: 160px;
   z-index: 3;
   color: transparent;
 }
@@ -461,7 +508,7 @@ body {
 .hero-text {
   position: absolute;
   left: 330px;
-  top: 120px;
+  top: 160px;
   z-index: 1;
 }
 
@@ -529,7 +576,7 @@ body {
 .sidebar-head-links__link {
   padding-left: 27px;
   position: relative;
-  color: #868686;
+  color: rgba(255, 255, 255, 0.8);
   letter-spacing: 2px;
   cursor: pointer;
   transition: 0.3s ease-in-out all;
@@ -543,9 +590,6 @@ body {
   color: #5AB159;
   font-weight: 200;
 }
-.sidebar-head-links__link:hover svg {
-  fill: #5AB159;
-}
 .sidebar-head-links__link:after {
   content: "";
   position: absolute;
@@ -553,10 +597,6 @@ body {
   left: 0;
   right: 0;
   border-bottom: 1px solid #4b4b4b;
-}
-.sidebar-head-links__link svg {
-  fill: #FFFFFF;
-  transition: 0.3s ease-in-out all;
 }
 .sidebar-social {
   gap: 15px;
@@ -595,13 +635,14 @@ body {
   gap: 30px;
 }
 .content-card p {
-  font-size: 24px;
+  font-size: 18px;
 }
 .content-card h2 {
   font-size: 36px;
+  margin-bottom: 20px;
 }
 .content-card__description {
-  flex: 50%;
+  max-width: 500px;
 }
 .content-card__photo {
   width: 500px;

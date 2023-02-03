@@ -87,14 +87,14 @@ body {
 .outline {
     position: absolute;
     left: 330px;
-    top: 120px;
+    top: 160px;
     z-index: 3;
     color: transparent;
 }
 .hero-text {
     position: absolute;
     left: 330px;
-    top: 120px;
+    top: 160px;
     z-index: 1;
 }
 
@@ -150,7 +150,6 @@ body {
             border-radius: 50%;
             z-index: 2;
             border: 6px solid $white;
-            //background: url(https://klike.net/uploads/posts/2022-07/1657520750_2.jpg) 0 0/100% 100% no-repeat;
             background: url("https://vsememy.ru/wp-content/uploads/2022/07/ede4befbf36f1c09738bd3091f36bba1.jpg")  0 0/100% 100% no-repeat;
         }
         &__title {
@@ -180,9 +179,6 @@ body {
         &:hover {
             color: $green-primary;
             font-weight: 200;
-            svg {
-                fill: $green-primary;
-            }
         }
 
         &:after {
@@ -193,28 +189,15 @@ body {
             right: 0;
             border-bottom: 1px solid #4b4b4b;
         }
-        svg {
-            fill: $white;
-            transition: .3s ease-in-out all;
-        }
-
     }
     &-social {
         gap: 15px;
         margin: 0 auto 15px;
     }
 }
+
 /**CONTENT**/
 
-.content-circle__container {
-    //position: absolute;
-    //top: 0;
-    //right: 0;
-    //object-fit: contain;
-    //overflow: hidden;
-    //width: 890px;
-    //height: 833px;
-}
 
 .content {
     width: 100%;
@@ -223,7 +206,6 @@ body {
     .container{
         height: 100vh;
     }
-    //background: url(/resources/img/bigcircle.png) -200% 200% no-repeat;
     &-circle {
         position: relative;
         bottom: 24%;
@@ -245,15 +227,15 @@ body {
     &-card {
         z-index: 2;
         gap: 30px;
-        //flex: 0 1 100%;
         p{
-            font-size: 24px;
+            font-size: 18px;
         }
         h2 {
             font-size: 36px;
+            margin-bottom: 20px;
         }
         &__description {
-            flex: 50%;
+            max-width: 500px
         }
         &__photo {
             width: 500px;

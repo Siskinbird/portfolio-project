@@ -3,17 +3,79 @@
   width: 24px;
   height: 24px;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   margin: 0;
   mask-position: center;
+  -webkit-mask-position: center;
   mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   mask-size: contain;
-  z-index: 2;
+  -webkit-mask-size: contain;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all .3s ease-in-out;
+  &:hover {
+    background-color: #5AB159;
+  }
+
 }
 
 .v-icon {
   &-telegram {
     @extend %icon-standard;
-    mask: url("../resources/img/socials/Telegram.svg");
+    mask-image: url("../resources/img/socials/Telegram.svg");
+    -webkit-mask-image: url("../resources/img/socials/Telegram.svg");
   }
+  &-git {
+    @extend %icon-standard;
+    mask-image: url("../resources/img/socials/Telegram.svg");
+    -webkit-mask-image: url("../resources/img/socials/GitHub.svg");
+  }
+  &-youtube {
+    @extend %icon-standard;
+    mask-image: url("../resources/img/socials/Telegram.svg");
+    -webkit-mask-image: url("../resources/img/socials/youtube.svg");
+  }
+  &-linkedin {
+    @extend %icon-standard;
+    mask-image: url("../resources/img/socials/Telegram.svg");
+    -webkit-mask-image: url("../resources/img/socials/LinkedIn.svg");
+  }
+  &-instagram {
+    @extend %icon-standard;
+    mask-image: url("../resources/img/socials/Telegram.svg");
+    -webkit-mask-image: url("../resources/img/socials/Instagram.svg");
+  }
+
+  //Navigation icons
+  &-about {
+    @extend %icon-standard;
+    mask-image: url("../resources/img/nav-icons/about.svg");
+    -webkit-mask-image: url("../resources/img/nav-icons/about.svg");
+  }
+  &-blogs {
+    @extend %icon-standard;
+    mask-image: url("../resources/img/nav-icons/blogs.svg");
+    -webkit-mask-image: url("../resources/img/nav-icons/blogs.svg");
+  }
+  &-contacts {
+    @extend %icon-standard;
+    mask-image: url("../resources/img/nav-icons/contacts.svg");
+    -webkit-mask-image: url("../resources/img/nav-icons/contacts.svg");
+  }
+  &-home {
+    @extend %icon-standard;
+    mask-image: url("../resources/img/nav-icons/home.svg");
+    -webkit-mask-image: url("../resources/img/nav-icons/home.svg");
+  }
+  &-portfolio {
+    @extend %icon-standard;
+    mask-image: url("../resources/img/nav-icons/portfolio.svg");
+    -webkit-mask-image: url("../resources/img/nav-icons/portfolio.svg");
+  }
+  &-services {
+    @extend %icon-standard;
+    mask-image: url("../resources/img/nav-icons/services.svg");
+    -webkit-mask-image: url("../resources/img/nav-icons/services.svg");
+  }
+
 }
