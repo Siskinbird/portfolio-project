@@ -141,7 +141,6 @@ body {
     bottom: 0;
     top: 0;
     position: fixed;
-
     //height: calc(100% - 50px);
     background-color: #333342;
 
@@ -179,11 +178,13 @@ body {
             padding-left: 16px;
             margin: 18px 0;
         }
-
-        &:hover {
-            color: $green-primary;
-            font-weight: 200;
+        li {
+            &:hover {
+                color: $green-primary;
+                font-weight: 200;
+            }
         }
+
 
         &:after {
             content: "";
@@ -230,7 +231,8 @@ body {
     }
     &-card {
         z-index: 2;
-        gap: 30px;
+        gap: 14px;
+        margin-left: auto;
         p{
             font-size: 18px;
         }
@@ -239,7 +241,7 @@ body {
             margin-bottom: 20px;
         }
         &__description {
-            max-width: 500px
+            max-width: 364px
         }
         &__photo {
             width: 500px;

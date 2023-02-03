@@ -588,7 +588,7 @@ body {
   padding-left: 16px;
   margin: 18px 0;
 }
-.sidebar-head-links__link:hover {
+.sidebar-head-links__link li:hover {
   color: #5AB159;
   font-weight: 200;
 }
@@ -634,7 +634,8 @@ body {
 }
 .content-card {
   z-index: 2;
-  gap: 30px;
+  gap: 14px;
+  margin-left: auto;
 }
 .content-card p {
   font-size: 18px;
@@ -644,7 +645,7 @@ body {
   margin-bottom: 20px;
 }
 .content-card__description {
-  max-width: 500px;
+  max-width: 364px;
 }
 .content-card__photo {
   width: 500px;
