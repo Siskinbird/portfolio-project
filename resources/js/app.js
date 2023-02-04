@@ -1,3 +1,5 @@
+/**-----------------------------PRELOADER ANIMATION--------------------------------*/
+
 setTimeout(function() {
     let preloader = document.getElementById("preloader");
     let wrapper = document.getElementById('wrapper')
@@ -8,5 +10,24 @@ setTimeout(function() {
         wrapper.style.opacity = 1;
     }, 1000);
 }, 3000);
+/**--------------------------------------------------------------------------------*/
 
-console.log('My App!');
+
+
+/**--------------------------------ANIMATE TEXT-----------------------------------*/
+
+const desc = document.getElementById("desc"),
+    txt = 'Я — веб-разработчик, работаю с организациями разного масштаба.\n' +
+        '                            ' +
+        'Специализируюсь на создании современных веб сайтов, приложений, интернет магазинов.';
+let i = 0;
+function typeWriter() {
+    if (i < txt.length) {
+        desc.innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+    }
+}
+
+setTimeout(typeWriter, 5000)
+/**--------------------------------------------------------------------------------*/
