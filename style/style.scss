@@ -144,6 +144,7 @@ body {
     bottom: 0;
     top: 0;
     position: fixed;
+    z-index: 4;
     //height: calc(100% - 50px);
     background-color: #333342;
 
@@ -177,9 +178,12 @@ body {
         cursor: pointer;
         transition: .3s ease-in-out all;
         font-weight: 600;
-        h5{
+
+        h5 {
             padding-left: 16px;
+            font-weight: 400;
             margin: 18px 0;
+            transition: .3s ease-in-out all;
         }
 
         &:after {
@@ -196,6 +200,28 @@ body {
         margin: 0 auto 15px;
     }
 }
+
+    li {
+        &:hover {
+            h5 {
+                color: #FFFFFF;
+                font-weight: 800;
+                //color: $green-primary;
+            }
+            span {
+                background-color: #FFFFFF;
+            }
+        }
+        &.active {
+            h5 {
+                color: $green-primary;
+                font-weight: 800;
+            }
+            span {
+                background-color: $green-primary;
+            }
+        }
+    }
 
 /**CONTENT**/
 
