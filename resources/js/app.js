@@ -1,3 +1,4 @@
+
 /**-----------------------------PRELOADER ANIMATION--------------------------------*/
 
 setTimeout(function() {
@@ -30,4 +31,20 @@ function typeWriter() {
 }
 
 setTimeout(typeWriter, 5000)
+/**--------------------------------------------------------------------------------*/
+
+/**----------------------------------CHANGE THEME-----------------------------------*/
+
+const body = document.getElementById('body')
+const sideBar = document.getElementById('sidebar')
+function changeTheme() {
+
+    body.classList.add('light')
+    body.addEventListener('click', function () {
+        body.style.background = 'white';
+        body.style.color = 'black';
+        sideBar.style.background = '#d2d0d0'
+    })
+}
+
 /**--------------------------------------------------------------------------------*/

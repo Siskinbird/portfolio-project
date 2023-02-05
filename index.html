@@ -7,7 +7,7 @@
     <title></title>
     <link rel="stylesheet" href="src/style.css">
 </head>
-<body>
+<body id="body">
     <div class="preloader" id="preloader">
         <div class="preloader-ray"></div>
         <div class="container">
@@ -30,7 +30,7 @@
     <!-- /.header -->
     
     <main class="main d-flex">
-        <section class="sidebar d-flex flex-column">
+        <section class="sidebar d-flex flex-column" id="sidebar">
             <div class="sidebar-head d-flex al-center flex-column">
                 <div class="sidebar-head__logo">
                 </div>
@@ -88,7 +88,7 @@
     </main>
     <!-- /.main -->
 
-   <label class="color_switch">
+   <label onclick="changeTheme()" class="color_switch">
        <i class="fa-solid fa-sun"></i>
     </label>
     <footer class="footer">
