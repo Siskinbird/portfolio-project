@@ -553,6 +553,9 @@ body {
 .lightTheme .sidebar li.active span {
   background-color: #2fbf71;
 }
+.lightTheme .sidebar-head-links__link {
+  border-top: 1px solid rgba(11, 11, 19, 0.03);
+}
 
 /**----------------------------------------*/
 #wrapper {
@@ -704,20 +707,13 @@ body {
   cursor: pointer;
   transition: 0.3s ease-in-out all;
   font-weight: 600;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
 .sidebar-head-links__link h5 {
   padding-left: 16px;
   font-weight: 400;
   margin: 18px 0;
   transition: 0.3s ease-in-out all;
-}
-.sidebar-head-links__link:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 1px solid #4b4b4b;
 }
 .sidebar-social {
   gap: 15px;
