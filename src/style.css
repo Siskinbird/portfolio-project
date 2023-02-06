@@ -794,7 +794,6 @@ li.active span {
 .home-card p {
   font-size: 18px;
   line-height: 32px;
-  padding-bottom: 60px;
 }
 .home-card h2 {
   font-size: 65px;
@@ -804,6 +803,10 @@ li.active span {
 }
 .home-card__description {
   max-width: 590px;
+}
+.home-card__description-text {
+  width: 450px;
+  height: 190px;
 }
 .home-card__photo {
   width: 500px;

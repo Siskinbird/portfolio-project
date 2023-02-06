@@ -350,7 +350,6 @@ body {
         p{
             font-size: 18px;
             line-height: 32px;
-            padding-bottom: 60px;
         }
         h2 {
             font-size: 65px;
@@ -360,7 +359,10 @@ body {
         }
         &__description {
             max-width: 590px;
-
+            &-text {
+                width: 450px;
+                height: 190px;
+            }
         }
         &__photo {
             width: 500px;

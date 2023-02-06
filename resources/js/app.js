@@ -33,13 +33,35 @@ function typeWriter() {
 setTimeout(typeWriter, 5000)
 /**--------------------------------------------------------------------------------*/
 
+
+
 /**----------------------------------CHANGE THEME-----------------------------------*/
 
 const body = document.getElementById('body')
-function changeTheme() {
-    body.addEventListener('click', function () {
+const themeSwitch = document.querySelector('.color_switch');
+
+themeSwitch.addEventListener('click', () => {
+    if (localStorage.getItem('theme') === 'lightTheme') {
+        localStorage.removeItem('theme')
+        body.classList.remove('lightTheme')
+    } else {
+        localStorage.setItem('theme', 'lightTheme')
         body.classList.add('lightTheme')
-    })
+    }
+})
+
+function addLightTheme() {
+    try {
+        if (localStorage.getItem('theme') === 'lightTheme') {
+            body.classList.add('lightTheme')
+        } else {
+            body.classList.remove('lightTheme')
+        }
+    } catch (err) {
+        console.log('Something went wrong')
+    }
 }
+
+addLightTheme()
 
 /**--------------------------------------------------------------------------------*/
