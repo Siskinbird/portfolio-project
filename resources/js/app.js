@@ -37,13 +37,12 @@ setTimeout(typeWriter, 5000)
 
 const body = document.getElementById('body')
 const sideBar = document.getElementById('sidebar')
+const home = document.getElementById('home')
 function changeTheme() {
-
-    body.classList.add('light')
     body.addEventListener('click', function () {
-        body.style.background = 'white';
-        body.style.color = 'black';
-        sideBar.style.background = '#d2d0d0'
+        body.classList.add('lightThemeBody')
+        sideBar.classList.add('lightThemeSidebar')
+        home.classList.add('lightThemeHome')
     })
 }
 
