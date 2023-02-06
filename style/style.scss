@@ -42,8 +42,8 @@ body {
     }
 
     .color_switch {
-        background-color: black;
-        opacity: 0.5;
+        background-color: #333342;
+        //opacity: 0.5;
     }
     .home-banner {
         background-color: $light-theme-bg;
@@ -138,8 +138,6 @@ body {
         transform: translateX(100%);
     }
 }
-
-
 
 .box {
     height: 300px;
@@ -237,7 +235,6 @@ body {
         &__title {
             letter-spacing: 4px;
             margin-top: 14px;
-            font-weight: 200;
         }
         &-links {
             flex: 1;

@@ -22,6 +22,7 @@ const desc = document.getElementById("desc"),
         '                            ' +
         'Специализируюсь на создании современных веб сайтов, приложений, интернет магазинов.';
 let i = 0;
+
 function typeWriter() {
     if (i < txt.length) {
         desc.innerHTML += txt.charAt(i);
@@ -49,6 +50,8 @@ themeSwitch.addEventListener('click', () => {
         body.classList.add('lightTheme')
     }
 })
+
+/** Add theme in to local storage*/
 
 function addLightTheme() {
     try {
