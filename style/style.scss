@@ -24,8 +24,26 @@ body {
 /**----------Light theme classes-----------*/
 
 .lightTheme {
+    .sidebar-social {
+        span {
+            //fill: black;
+            background-color: #0b0b13;
+            opacity: 0.5;
+        }
+    }
+    .px-btn-theme {
+        box-shadow: 4px 4px #0b0b13;
+
+        &:hover {
+            background: #0b0b13;
+            color: #FFFFFF;
+            box-shadow: 4px 4px #2fbf71;
+        }
+    }
+
     .color_switch {
         background-color: black;
+        opacity: 0.5;
     }
     .home-banner {
         background-color: $light-theme-bg;

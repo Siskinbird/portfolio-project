@@ -471,7 +471,6 @@ button {
   border: 1px solid transparent;
   font-weight: 400;
   font-size: 14px;
-  font-weight: 400;
   letter-spacing: 2px;
   text-decoration: none !important;
   transition: 0.3s all ease-in-out;
@@ -502,8 +501,21 @@ body {
 }
 
 /**----------Light theme classes-----------*/
+.lightTheme .sidebar-social span {
+  background-color: #0b0b13;
+  opacity: 0.5;
+}
+.lightTheme .px-btn-theme {
+  box-shadow: 4px 4px #0b0b13;
+}
+.lightTheme .px-btn-theme:hover {
+  background: #0b0b13;
+  color: #FFFFFF;
+  box-shadow: 4px 4px #2fbf71;
+}
 .lightTheme .color_switch {
   background-color: black;
+  opacity: 0.5;
 }
 .lightTheme .home-banner {
   background-color: #FFFFFF;
