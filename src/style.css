@@ -470,18 +470,44 @@ body {
 }
 
 /**----------Light theme classes-----------*/
-.lightThemeBody {
+.lightTheme .color_switch {
+  background-color: black;
+}
+.lightTheme .home-banner {
   background-color: #FFFFFF;
   color: #000000;
 }
-
-.lightThemeSidebar {
+.lightTheme .home-banner:after {
+  background: #f7f7ff;
+  z-index: 2;
+}
+.lightTheme .sidebar {
   background-color: #f7f7ff;
   color: rgba(11, 11, 19, 0.7);
 }
-
-.lightThemeHome:after {
+.lightTheme .sidebar::after {
   background-color: #f7f7ff;
+}
+.lightTheme .sidebar li {
+  color: black;
+  font-weight: 600;
+}
+.lightTheme .sidebar li span {
+  background-color: rgba(11, 11, 19, 0.7);
+}
+.lightTheme .sidebar li:hover h5 {
+  color: #5AB159;
+  font-weight: 800;
+}
+.lightTheme .sidebar li:hover span {
+  background-color: #5AB159;
+}
+.lightTheme .sidebar li.active h5 {
+  color: #5AB159;
+  font-weight: 800;
+}
+.lightTheme .sidebar li.active span {
+  background-color: #5AB159;
 }
 
 /**----------------------------------------*/
@@ -605,34 +631,6 @@ body {
   z-index: 4;
   background-color: #333342;
 }
-.sidebar.lightThemeSidebar {
-  background-color: #f7f7ff;
-  color: rgba(11, 11, 19, 0.7);
-}
-.sidebar.lightThemeSidebar::after {
-  background-color: #f7f7ff;
-}
-.sidebar.lightThemeSidebar li {
-  color: black;
-  font-weight: 600;
-}
-.sidebar.lightThemeSidebar li span {
-  background-color: rgba(11, 11, 19, 0.7);
-}
-.sidebar.lightThemeSidebar li:hover h5 {
-  color: #5AB159;
-  font-weight: 800;
-}
-.sidebar.lightThemeSidebar li:hover span {
-  background-color: #5AB159;
-}
-.sidebar.lightThemeSidebar li.active h5 {
-  color: #5AB159;
-  font-weight: 800;
-}
-.sidebar.lightThemeSidebar li.active span {
-  background-color: #5AB159;
-}
 .sidebar-head {
   background: url("../resources/img/circle.png") -72px -220px no-repeat;
 }
@@ -715,10 +713,6 @@ li.active span {
   cursor: pointer;
 }
 
-.lightThemeHome .home-banner:after {
-  background: #f7f7ff;
-}
-
 .home {
   width: 100%;
   height: 100vh;
@@ -741,7 +735,8 @@ li.active span {
   z-index: -1;
 }
 .home-card {
-  z-index: 2;
+  position: inherit;
+  z-index: 3;
   gap: 32px;
   margin-right: -15px;
   margin-left: -15px;
