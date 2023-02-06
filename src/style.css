@@ -462,6 +462,38 @@ button {
   border: none;
 }
 
+.btn {
+  padding: 0 25px;
+  cursor: pointer;
+  line-height: 42px;
+  display: inline-block;
+  background: none;
+  border: 1px solid transparent;
+  font-weight: 400;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none !important;
+  transition: 0.3s all ease-in-out;
+}
+.btn.px-btn-theme {
+  background: #2fbf71;
+  color: #FFFFFF;
+  box-shadow: 4px 4px #FFFFFF;
+}
+.theme-light .btn.px-btn-theme {
+  box-shadow: 4px 4px #0b0b13;
+}
+.btn.px-btn-theme:hover {
+  background: #FFFFFF;
+  color: #2fbf71;
+  box-shadow: 4px 4px #2fbf71;
+}
+.theme-light .btn.px-btn-theme:hover {
+  background: #0b0b13;
+  color: #FFFFFF;
+}
+
 body {
   overflow-x: hidden;
   font-family: "SF Pro", sans-serif;
@@ -496,18 +528,18 @@ body {
   background-color: rgba(11, 11, 19, 0.7);
 }
 .lightTheme .sidebar li:hover h5 {
-  color: #5AB159;
+  color: #2fbf71;
   font-weight: 800;
 }
 .lightTheme .sidebar li:hover span {
-  background-color: #5AB159;
+  background-color: #2fbf71;
 }
 .lightTheme .sidebar li.active h5 {
-  color: #5AB159;
+  color: #2fbf71;
   font-weight: 800;
 }
 .lightTheme .sidebar li.active span {
-  background-color: #5AB159;
+  background-color: #2fbf71;
 }
 
 /**----------------------------------------*/
@@ -555,7 +587,7 @@ body {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  background-color: #5AB159;
+  background-color: #2fbf71;
   position: absolute;
   animation: pulsate 1s ease-out;
   animation-iteration-count: infinite;
@@ -688,11 +720,11 @@ li:hover span {
   background-color: #FFFFFF;
 }
 li.active h5 {
-  color: #5AB159;
+  color: #2fbf71;
   font-weight: 800;
 }
 li.active span {
-  background-color: #5AB159;
+  background-color: #2fbf71;
 }
 
 /*----------------------------------------------HOME-------------------------------*/
@@ -750,6 +782,7 @@ li.active span {
 .home-card p {
   font-size: 18px;
   line-height: 32px;
+  padding-bottom: 60px;
 }
 .home-card h2 {
   font-size: 65px;

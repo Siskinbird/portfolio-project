@@ -11,6 +11,34 @@ button {
     outline: none;
     border: none;
 }
-.primary-btn{
-
+.btn{
+    padding: 0 25px;
+    cursor: pointer;
+    line-height: 42px;
+    display: inline-block;
+    background: none;
+    border: 1px solid transparent;
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: none !important;
+    transition: .3s all ease-in-out;
+    &.px-btn-theme {
+        background: #2fbf71;
+        color: #FFFFFF;
+        box-shadow: 4px 4px #FFFFFF;
+        .theme-light & {
+            box-shadow: 4px 4px #0b0b13;
+        }
+        &:hover {
+            background: #FFFFFF;
+            color: #2fbf71;
+            box-shadow: 4px 4px #2fbf71;
+            .theme-light & {
+                background: #0b0b13;
+                color: #FFFFFF;
+            }
+        }
+    }
 }
