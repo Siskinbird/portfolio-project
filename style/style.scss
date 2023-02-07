@@ -255,18 +255,12 @@ body {
         h5 {
             padding-left: 16px;
             font-weight: 400;
-            margin: 18px 0;
+            margin: 15px 0;
             transition: .3s ease-in-out all;
+            @include _1420 {
+                margin: 12px 0;
+            }
         }
-
-        //&:after {
-        //    content: "";
-        //    position: absolute;
-        //    bottom: 0;
-        //    left: 0;
-        //    right: 0;
-        //    border-top: 1px solid #4b4b4b;
-        //}
     }
     &-social {
         gap: 15px;
@@ -343,6 +337,19 @@ body {
         margin-right: -15px;
         margin-left: -15px;
         min-height: 100vh;
+        @include _1688 {
+            justify-content: flex-end;
+            margin-left: -200px;
+        }
+        @include _1599 {
+            margin-left: -50px;
+        }
+        @include _1515 {
+            margin-left: -8px;
+            gap: 14px;
+        }
+
+
         h6 {
             font-size: 25px;
             font-weight: 500;
@@ -357,6 +364,9 @@ body {
             font-weight: 700;
             line-height: 1;
             margin: 0 0 20px;
+            @include _1333 {
+                font-size: 52px;
+            }
         }
         &__description {
             max-width: 590px;
@@ -366,11 +376,15 @@ body {
             }
         }
         &__photo {
-            width: 500px;
-            height: 500px;
+            width: 540px;
+            height: 540px;
             border-radius: 50%;
             border: 4px solid $yellow-primary;
             background: url("../resources/img/morty.png") center / contain no-repeat;
+            @include _1420 {
+                width: 445px;
+                height: 445px;
+            }
         }
     }
 }
