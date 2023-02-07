@@ -693,7 +693,7 @@ body {
   }
 }
 
-/**BURGER*/
+/**----------------------------------BURGER---------------------*/
 .burger {
   position: relative;
   width: 38px;
@@ -719,7 +719,7 @@ body {
   position: absolute;
   width: 24px;
   height: 4px;
-  background-color: #2fbf71; /* idle bar color */
+  background-color: #2fbf71;
   margin-bottom: 4px;
   transition: transform 0.2s ease-out, opacity 0.2s ease-out, background-color 0.2s ease-out;
   border-radius: 1px;

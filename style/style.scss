@@ -225,7 +225,6 @@ body {
     background: $theme-bg-color;
     &__label {
         font-weight: 800;
-        //color: #fff;
         font-size: 25px;
         line-height: 1;
     }
@@ -234,7 +233,7 @@ body {
     }
 }
 
-/**BURGER*/
+/**----------------------------------BURGER---------------------*/
 
 .burger {
     position: relative;
@@ -262,7 +261,7 @@ body {
         position: absolute;
         width: 24px;
         height: 4px;
-        background-color: $green-primary; /* idle bar color */
+        background-color: $green-primary;
         margin-bottom: 4px;
         transition: transform .2s ease-out,
         opacity .2s ease-out,
