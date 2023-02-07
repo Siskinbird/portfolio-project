@@ -13,7 +13,23 @@ setTimeout(function() {
 }, 3000);
 /**--------------------------------------------------------------------------------*/
 
+/**--------------------------------BURGER ANIMATION-----------------------------------*/
 
+document.addEventListener('DOMContentLoaded', function(){
+    let burger = document.querySelector('.burger');
+
+    burger.addEventListener('mousedown', function(){
+        //let button = burger;
+
+        if(burger.classList.contains('open')){
+            burger.classList.remove('open');
+        } else {
+            burger.classList.add('open');
+        }
+    });
+});
+
+/**--------------------------------------------------------------------------------*/
 
 /**--------------------------------ANIMATE TEXT-----------------------------------*/
 
