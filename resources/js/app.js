@@ -14,6 +14,8 @@ setTimeout(function() {
 /**--------------------------------------------------------------------------------*/
 
 /**--------------------------------BURGER ANIMATION-----------------------------------*/
+const sideBar = document.getElementById('sidebar');
+const headerMobile = document.getElementById('header-mobile')
 
 document.addEventListener('DOMContentLoaded', function(){
     let burger = document.querySelector('.burger');
@@ -23,8 +25,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
         if(burger.classList.contains('open')){
             burger.classList.remove('open');
+            sideBar.style.left = -300 + 'px'
         } else {
             burger.classList.add('open');
+            headerMobile.style.display = 'flex'
+            sideBar.style.left = 0
         }
     });
 });
