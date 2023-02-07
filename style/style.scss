@@ -217,17 +217,20 @@ body {
 /**----------------------------HEADER MOBILE-------------------*/
 .header-mobile {
     padding: 15px;
-    //display: block;
+    display: none;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 11;
+    z-index: 4;
     background: $theme-bg-color;
     &__label {
         font-weight: 800;
         //color: #fff;
         font-size: 25px;
         line-height: 1;
+    }
+    @include _1200 {
+        display: flex;
     }
 }
 
@@ -298,13 +301,13 @@ body {
     width: 250px;
     bottom: 0;
     top: 0;
+    left: 0;
     position: fixed;
     z-index: 4;
     background-color: #333342;
     @include _1200 {
         transition: ease all 0.35s;
         left: -300px;
-        z-index: 222;
     }
     &-head {
         background: url('../resources/img/circle.png') -72px -220px no-repeat;

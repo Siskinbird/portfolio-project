@@ -1,6 +1,7 @@
 
 /**-----------------------------PRELOADER ANIMATION--------------------------------*/
 
+
 setTimeout(function() {
     let preloader = document.getElementById("preloader");
     let wrapper = document.getElementById('wrapper')
@@ -11,32 +12,31 @@ setTimeout(function() {
         wrapper.style.opacity = 1;
     }, 1000);
 }, 3000);
-/**--------------------------------------------------------------------------------*/
+
 
 /**--------------------------------BURGER ANIMATION-----------------------------------*/
+
+
 const sideBar = document.getElementById('sidebar');
-const headerMobile = document.getElementById('header-mobile')
 
 document.addEventListener('DOMContentLoaded', function(){
     let burger = document.querySelector('.burger');
 
     burger.addEventListener('mousedown', function(){
-        //let button = burger;
 
         if(burger.classList.contains('open')){
             burger.classList.remove('open');
             sideBar.style.left = -300 + 'px'
         } else {
             burger.classList.add('open');
-            headerMobile.style.display = 'flex'
             sideBar.style.left = 0
         }
     });
 });
 
-/**--------------------------------------------------------------------------------*/
 
 /**--------------------------------ANIMATE TEXT-----------------------------------*/
+
 
 const desc = document.getElementById("desc"),
     txt = 'Я — веб-разработчик, работаю с организациями разного масштаба.\n' +
@@ -53,8 +53,6 @@ function typeWriter() {
 }
 
 setTimeout(typeWriter, 5000)
-/**--------------------------------------------------------------------------------*/
-
 
 
 /**----------------------------------CHANGE THEME-----------------------------------*/
@@ -88,4 +86,3 @@ function addLightTheme() {
 
 addLightTheme()
 
-/**--------------------------------------------------------------------------------*/
