@@ -898,6 +898,11 @@ li.active span {
     margin-left: 0;
   }
 }
+@media (max-width: 979px) {
+  .home-card {
+    flex-wrap: wrap;
+  }
+}
 .home-card h6 {
   font-size: 25px;
   font-weight: 500;
@@ -936,6 +941,12 @@ li.active span {
   .home-card__photo {
     width: 445px;
     height: 445px;
+  }
+}
+@media (max-width: 979px) {
+  .home-card__photo {
+    width: 666px;
+    height: 666px;
   }
 }
 

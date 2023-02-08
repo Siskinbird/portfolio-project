@@ -83,6 +83,21 @@ function addLightTheme() {
         console.log('Something went wrong')
     }
 }
+//
+// /**-----------------------------WHAT'S YOU'R TIME THEME */
+//
+// const whatsTime = () => {
+//     let dateToDay = new Date();
+//     let timeNow = dateToDay.getTime();
+//     dateToDay.setTime(timeNow);
+//     let theHour = dateToDay.getHours();
+//     if(theHour > 20) {
+//         body.classList.remove('lightTheme')
+//     } else {
+//         body.classList.add('lightTheme')
+//     }
+// }
+// whatsTime();
 
-addLightTheme()
+addLightTheme();
 

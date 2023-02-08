@@ -443,6 +443,9 @@ body {
             justify-content: center;
             margin-left: 0;
         }
+        @include _979 {
+            flex-wrap: wrap;
+        }
 
         h6 {
             font-size: 25px;
@@ -478,6 +481,10 @@ body {
             @include _1420 {
                 width: 445px;
                 height: 445px;
+            }
+            @include _979 {
+                width: 666px;
+                height: 666px;
             }
         }
     }
