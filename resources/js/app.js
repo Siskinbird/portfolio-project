@@ -1,3 +1,14 @@
+/**-----------------------------VARIABLES--------------------------------*/
+
+const body = document.getElementById('body');
+const themeSwitch = document.querySelector('.color_switch');
+const sideBar = document.getElementById('sidebar');
+const desc = document.getElementById("desc");
+const txt = 'Я — веб-разработчик, работаю с организациями разного масштаба.\n' +
+        '                            ' +
+        'Специализируюсь на создании современных веб сайтов, приложений, интернет магазинов.';
+
+
 
 /**-----------------------------PRELOADER ANIMATION--------------------------------*/
 
@@ -13,11 +24,26 @@ setTimeout(function() {
     }, 1000);
 }, 3000);
 
+/**-----------------------------WHAT'S YOU'R TIME THEME */
+
+
+const whatsTime = () => {
+    let dateToDay = new Date();
+    let timeNow = dateToDay.getTime();
+    dateToDay.setTime(timeNow);
+    let theHour = dateToDay.getHours();
+    console.log(theHour);
+    if(theHour < 20) {
+        body.classList.add('lightTheme')
+    } else {
+        body.classList.remove('lightTheme')
+    }
+}
+
+
 
 /**--------------------------------BURGER ANIMATION-----------------------------------*/
 
-
-const sideBar = document.getElementById('sidebar');
 
 document.addEventListener('DOMContentLoaded', function(){
     let burger = document.querySelector('.burger');
@@ -37,11 +63,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
 /**--------------------------------ANIMATE TEXT-----------------------------------*/
 
-
-const desc = document.getElementById("desc"),
-    txt = 'Я — веб-разработчик, работаю с организациями разного масштаба.\n' +
-        '                            ' +
-        'Специализируюсь на создании современных веб сайтов, приложений, интернет магазинов.';
 let i = 0;
 
 function typeWriter() {
@@ -57,8 +78,7 @@ setTimeout(typeWriter, 5000)
 
 /**----------------------------------CHANGE THEME-----------------------------------*/
 
-const body = document.getElementById('body')
-const themeSwitch = document.querySelector('.color_switch');
+
 
 themeSwitch.addEventListener('click', () => {
     if (localStorage.getItem('theme') === 'lightTheme') {
@@ -83,21 +103,9 @@ function addLightTheme() {
         console.log('Something went wrong')
     }
 }
-//
-// /**-----------------------------WHAT'S YOU'R TIME THEME */
-//
-// const whatsTime = () => {
-//     let dateToDay = new Date();
-//     let timeNow = dateToDay.getTime();
-//     dateToDay.setTime(timeNow);
-//     let theHour = dateToDay.getHours();
-//     if(theHour > 20) {
-//         body.classList.remove('lightTheme')
-//     } else {
-//         body.classList.add('lightTheme')
-//     }
-// }
-// whatsTime();
+
+
+
 
 addLightTheme();
 
