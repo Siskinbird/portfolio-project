@@ -12,6 +12,7 @@
 @import "./icons";
 @import "./interface";
 @import "./media";
+
 //Layout
 @import "layout/sidebar";
 @import "layout/home";
@@ -74,52 +75,58 @@ body {
         font-size: 25px;
         line-height: 1;
     }
-
     @include _1200 {
         display: flex;
     }
 }
 
-.color_switch {
-    position: fixed;
-    top: 25px;
-    right: 25px;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    background: transparent;
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    border: 2px solid white;
-    border-radius: 50%;
-    z-index: 1111;
-    cursor: pointer;
-    @include _1200 {
-        top: 71px;
-        right: 10px;
+//EDUCATION
+.skills-column {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.education-column {
+    padding-top: 35px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    &__list {
+        background: #333342;
+        li {
+            padding: 20px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        h6 {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        span {
+            background: #2fbf71;
+            color: #fff;
+            font-size: 11px;
+            padding: 1px 8px;
+            display: inline-block;
+            vertical-align: top;
+            letter-spacing: 1px;
+            margin-left: -24px;
+            position: relative;
+            margin-bottom: 9px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                border-top: 5px solid #165934;
+                border-left: 5px solid transparent;
+            }
+        }
     }
 }
 
-
-.separator {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    position: relative;
-
-    &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        height: 1px;
-        background: #fff;
-        opacity: 0.1;
-    }
-}
 
 
 

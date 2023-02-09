@@ -538,6 +538,49 @@ button {
   color: #FFFFFF;
 }
 
+/**THEME SWITCH IMAGE BLOCK*/
+.color_switch {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid white;
+  border-radius: 50%;
+  z-index: 1111;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .color_switch {
+    top: 71px;
+    right: 10px;
+  }
+}
+
+/**SEPARATOR FOR SECTIONS*/
+.separator {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+.separator:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 1px;
+  background: #fff;
+  opacity: 0.1;
+}
+
 /**------------------------Light theme variables---------------------------*/
 /**-------------------------------SIDEBAR---------------------*/
 .sidebar {
@@ -876,45 +919,49 @@ body {
   }
 }
 
-.color_switch {
-  position: fixed;
-  top: 25px;
-  right: 25px;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  background: transparent;
-  color: white;
-  text-align: center;
-  font-size: 24px;
-  border: 2px solid white;
-  border-radius: 50%;
-  z-index: 1111;
-  cursor: pointer;
-}
-@media (max-width: 1200px) {
-  .color_switch {
-    top: 71px;
-    right: 10px;
-  }
+.skills-column {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
 }
 
-.separator {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  position: relative;
+.education-column {
+  padding-top: 35px;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
 }
-.separator:after {
+.education-column__list {
+  background: #333342;
+}
+.education-column__list li {
+  padding: 20px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+.education-column__list h6 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+.education-column__list span {
+  background: #2fbf71;
+  color: #fff;
+  font-size: 11px;
+  padding: 1px 8px;
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 1px;
+  margin-left: -24px;
+  position: relative;
+  margin-bottom: 9px;
+}
+.education-column__list span:after {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: -5px;
   left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  height: 1px;
-  background: #fff;
-  opacity: 0.1;
+  border-top: 5px solid #165934;
+  border-left: 5px solid transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
