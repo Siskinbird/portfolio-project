@@ -6,6 +6,11 @@
 .flex-column {
     flex-direction: column;
 }
+.flex-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
 
 .flex-wrap {
     flex-wrap: wrap;

@@ -49,7 +49,12 @@ body {
         background-color: #333342;
         //opacity: 0.5;
     }
+    //.home {
+    //    overflow: hidden;
+    //}
+
     .home-banner {
+        position: relative;
         background-color: $light-theme-bg;
         color: $light-theme-text;
         &:after {
@@ -108,13 +113,29 @@ body {
 }
 
 .container {
-    width: 100%;
+    position: relative;
+    max-width: 1140px;
     padding-right: 15px;
     padding-left: 15px;
+    //z-index: 10;
     margin-right: auto;
     margin-left: auto;
+    @include _1200 {
+        width: 950px;
+    }
 }
-
+.main {
+    left: 250px;
+    position: absolute;
+    height: auto;
+    width: calc(100% - 250px);
+    @include _1200 {
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+}
 #preloader {
     transition: opacity 1s ease-out;
 }
@@ -240,7 +261,7 @@ body {
     width: 38px;
     height: 34px;
     border: 2px solid $green-primary;
-    margin-right: 30px;
+   // margin-right: 30px;
     padding: 5px;
     border-radius: 3px;
     box-sizing: border-box;
@@ -377,6 +398,8 @@ body {
     }
 
 
+
+
 /*----------------------------------------------HOME-------------------------------*/
 .color_switch {
     position: fixed;
@@ -395,15 +418,15 @@ body {
     cursor: pointer;
     @include _1200 {
         top: 71px;
-        right: 24px;
+        right: 10px;
     }
 }
-//TODO ВЫНЕСТИ СВЕТЛУЮ ТЕМУ В ОДИН КЛАСС
+//TODO HOME
 
 .home {
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
     &-banner {
         min-height: 100vh;
         overflow: hidden;
@@ -428,21 +451,21 @@ body {
         margin-right: -15px;
         margin-left: -15px;
         min-height: 100vh;
-        @include _1688 {
-            justify-content: flex-end;
-            margin-left: -200px;
-        }
-        @include _1599 {
-            margin-left: -50px;
-        }
-        @include _1515 {
-            margin-left: -8px;
-            gap: 14px;
-        }
-        @include _1200 {
-            justify-content: center;
-            margin-left: 0;
-        }
+        //@include _1688 {
+        //    justify-content: flex-end;
+        //    margin-left: -200px;
+        //}
+        //@include _1599 {
+        //    margin-left: -50px;
+        //}
+        //@include _1515 {
+        //    margin-left: -8px;
+        //    gap: 14px;
+        //}
+        //@include _1200 {
+        //    justify-content: center;
+        //    margin-left: 0;
+        //}
         @include _979 {
             flex-wrap: wrap;
         }
@@ -488,4 +511,79 @@ body {
             }
         }
     }
+}
+
+.separator {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 1px;
+        background: #fff;
+        opacity: 0.1;
+    }
+}
+
+//TODO ABOUT
+.about {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    .container {
+        display: flex;
+    }
+    height: 600px;
+    width: 100%;
+    &-info {
+        max-width: 445px;
+        padding-top: 16px;
+        &__buttons {
+            &-button{
+                margin-right: 30px;
+            }
+        }
+    }
+    &-text {
+        p {
+            margin-top: 40px;
+            line-height: 130%;
+        }
+        span {
+            font-size: 50px;
+            line-height: 1;
+            color: #fff;
+            font-weight: 600;
+            min-width: 55px;
+            margin-left: 14px;
+        }
+        &__row {
+            margin: 30px -15px;
+            &-media__body {
+                padding-left: 4px;
+                padding-top: 4px;
+                flex: 1;
+            }
+        }
+    }
+    &-images {
+        img {
+            padding: 4px;
+        }
+        &__left {
+            align-items: flex-end;
+        }
+        &__right {
+            align-items: flex-start;
+        }
+    }
+    &-info {
+        padding-left: 50px;
+    }
+
 }

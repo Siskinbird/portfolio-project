@@ -33,7 +33,7 @@ const whatsTime = () => {
     dateToDay.setTime(timeNow);
     let theHour = dateToDay.getHours();
     console.log(theHour);
-    if(theHour < 20) {
+    if(theHour > 20) {
         body.classList.add('lightTheme')
     } else {
         body.classList.remove('lightTheme')

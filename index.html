@@ -10,23 +10,23 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body id="body" class="body" onload="whatsTime();">
-    <div class="preloader" id="preloader">
-        <div class="preloader-ray"></div>
-        <div class="container">
-            <div class="main-title">
-                <h1 class="hero-text slide-left">Привет</h1>
-            </div>
-            <div class="box"></div>
-            <div class="main-title">
-                <h1 class="outline slide-left">Привет</h1>
-            </div>
-        </div>
-    </div>
+<!--    <div class="preloader" id="preloader" >-->
+<!--        <div class="preloader-ray"></div>-->
+<!--        <div class="container">-->
+<!--            <div class="main-title">-->
+<!--                <h1 class="hero-text slide-left">Привет</h1>-->
+<!--            </div>-->
+<!--            <div class="box"></div>-->
+<!--            <div class="main-title">-->
+<!--                <h1 class="outline slide-left">Привет</h1>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <!-- /.preloader -->
 
-<div class="wrapper" id="wrapper">
+<div class="wrapper flex-column" id="wrapper" style="display: flex">
     <header class="header">
-        <div class="container">
+<!--        <div class="container">-->
             <div class="header-mobile d-flex j-between" id="header-mobile">
                 <a class="header-mobile__label">Chizhov</a>
                 <!-- start of icon code -->
@@ -38,11 +38,11 @@
                 </div>
                 <!-- end of icon code -->
             </div>
-        </div>
+<!--        </div>-->
     </header>
     <!-- /.header -->
     
-    <main class="main d-flex">
+    <main class="main d-flex flex-column">
         <section class="sidebar d-flex flex-column" id="sidebar">
             <div class="sidebar-head d-flex al-center flex-column">
                 <div class="sidebar-head__logo">
@@ -87,21 +87,80 @@
         </section>
         <section class="home" id="home">
             <div class="home-banner">
-                <div class="home-card container d-flex j-center al-center ">
-                    <div class="home-card__description">
-                        <h6>Привет! Меня зовут</h6>
-                        <h2>Чижов Дмитрий</h2>
-                        <p id="desc" class="home-card__description-text"></p>
-                        <a class="btn px-btn-theme">Скачать резюме</a>
-                    </div>
-                    <div class="home-card__photo">
-
+                <div class="container">
+                    <div class="home-card d-flex j-center al-center ">
+                        <div class="home-card__description">
+                            <h6>Привет! Меня зовут</h6>
+                            <h2>Чижов Дмитрий</h2>
+                            <p id="desc" class="home-card__description-text"></p>
+                            <a class="btn px-btn-theme">Скачать резюме</a>
+                        </div>
+                        <div class="home-card__photo">
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+    <!-------------ABOUT SECTION------------------------------------------>
+        <section class="about">
+            <div class="container">
+                <div class="about-images d-flex j-center al-center">
+                    <div class="about-images__left d-flex flex-column">
+                        <img src="./resources/img/about/circlesmall.png">
+                        <img src="./resources/img/about/left1.png">
+                        <img src="./resources/img/about/left2.png">
+                    </div>
+                    <div class="about-images__right d-flex flex-column">
+                        <img src="./resources/img/about/right1.png">
+                        <img src="./resources/img/about/right2.png">
+                        <img src="./resources/img/about/circlesmall.png">
+                    </div>
+                </div>
+                <div class="about-info">
+                    <h3 class="title">Обо мне.</h3>
+                    <div class="about-text">
+                        <h3 class="subTitle">Я фрилансер Front-end разработчик со стажем более 2-х лет</h3>
+                        <p>Я фрилансер Front-end разработчик. Более 2-х лет я создаю крутые сайты и приложения.
+                        Я открыт к новым знакомствам, новые знакомства новый опыт. Живу в Москве, коммуницирую со всем миром</p>
+                        <div class="about-text__row d-flex flex-wrap">
+                            <div class="col flex-auto">
+                                <div class="about-text__row-media d-flex al-center">
+                                    <span class="count">5k</span>
+                                    <div class="about-text__row-media__body">
+                                        Проектов
+                                        <br/>
+                                        завершено
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col flex-auto">
+                                <div class="about-text__row-media d-flex al-center">
+                                    <span class="count">3k</span>
+                                    <div class="about-text__row-media__body">
+                                        Довольных
+                                        <br/>
+                                        клиентов
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-info__buttons">
+                            <a class="about-info__buttons-button btn px-btn-theme" href="#">Напиши мне</a>
+                            <a class="about-info__buttons-button btn px-btn-theme" href="#">Портфолио</a>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </section>
+        <div class="separator"></div>
+        <section class="education">
+            <div class="container">
+                <h3 class="title">Образование и скилы</h3>
             </div>
 
         </section>
+
     </main>
     <!-- /.main -->
 
