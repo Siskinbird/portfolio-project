@@ -87,6 +87,47 @@ body {
     margin-left: auto;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
+    h3 {
+        margin-bottom: 35px;
+        margin-top: 30px;
+    }
+    p{
+        line-height: 150%;
+    }
+}
+.skill-it {
+    position: relative;
+    h6 {
+        font-size: 16px;
+        margin: 0 0 20px;
+        font-weight: 400;
+    }
+    &:not(&:first-child) {
+        margin-top: 25px;
+    }
+    .skill-bar {
+        position: relative;
+        background: rgba(255, 255, 255, 0.2);
+        &-inner {
+            width: 80px;
+            position: relative;
+            -moz-transition: ease all 0.55s;
+            -o-transition: ease all 0.55s;
+            -webkit-transition: ease all 0.55s;
+            transition: ease all 0.55s;
+            height: 5px;
+            background: #2fbf71;
+            span {
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background: #2fbf71;
+                position: absolute;
+                right: -1px;
+                top: -5px;
+            }
+        }
+    }
 }
 
 .education-column {
