@@ -1,0 +1,80 @@
+@import '../variables';
+
+/**----------Light theme classes-----------*/
+
+.lightTheme {
+  .header-mobile {
+    background-color: #FFFFFF;
+    color: #333342;
+  }
+  .sidebar-social {
+    span {
+      background-color: #0b0b13;
+      opacity: 0.5;
+    }
+  }
+  .px-btn-theme {
+    box-shadow: 4px 4px #0b0b13;
+
+    &:hover {
+      background: #0b0b13;
+      color: #FFFFFF;
+      box-shadow: 4px 4px #2fbf71;
+    }
+  }
+
+  .color_switch {
+    background-color: #333342;
+  }
+
+
+  .home-banner {
+    position: relative;
+    background-color: $light-theme-bg;
+    color: $light-theme-text;
+    &:after {
+      background: $light-theme-sidebar-bg;
+      z-index: 2;
+    }
+  }
+  .sidebar {
+    background-color: $light-theme-sidebar-bg;
+    color: $light-theme-sidebar-links;
+    &::after {
+      background-color: $light-theme-sidebar-bg;
+    }
+    li {
+      color: black;
+      font-weight: 600;
+
+      span {
+        background-color: $light-theme-sidebar-links;
+      }
+
+      &:hover {
+        h5 {
+          color: $green-primary;
+          font-weight: 800;
+        }
+
+        span {
+          background-color: $green-primary;
+        }
+      }
+
+      &.active {
+        h5 {
+          color: $green-primary;
+          font-weight: 800;
+        }
+
+        span {
+          background-color: $green-primary;
+        }
+      }
+    }
+    &-head-links__link {
+      border-top: 1px solid rgba(11, 11, 19, 0.03);
+    }
+  }
+}

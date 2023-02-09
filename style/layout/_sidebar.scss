@@ -1,0 +1,85 @@
+@import '../variables';
+@import "../media";
+
+/**-------------------------------SIDEBAR---------------------*/
+
+.sidebar {
+  text-transform: uppercase;
+  width: 250px;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 4;
+  background-color: #333342;
+  @include _1200 {
+    transition: ease all 0.35s;
+    left: -300px;
+  }
+  &-head {
+    background: url('../../resources/img/circle.png') -72px -220px no-repeat;
+    &__logo {
+      margin-top: 66px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      z-index: 2;
+      border: 6px solid $white;
+      background: url("https://vsememy.ru/wp-content/uploads/2022/07/ede4befbf36f1c09738bd3091f36bba1.jpg")  0 0/100% 100% no-repeat;
+    }
+    &__title {
+      letter-spacing: 4px;
+      margin-top: 14px;
+    }
+    &-links {
+      flex: 1;
+      margin-top: 30px;
+    }
+  }
+
+  &-head-links__link {
+    padding-left: 27px;
+    position: relative;
+    color: $link-gray;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .3s ease-in-out all;
+    font-weight: 600;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+
+    h5 {
+      padding-left: 16px;
+      font-weight: 400;
+      margin: 15px 0;
+      transition: .3s ease-in-out all;
+      @include _1420 {
+        margin: 12px 0;
+      }
+    }
+  }
+  &-social {
+    gap: 15px;
+    margin: 0 auto 15px;
+  }
+}
+
+li {
+  &:hover {
+    h5 {
+      color: #FFFFFF;
+      font-weight: 800;
+    }
+    span {
+      background-color: #FFFFFF;
+    }
+  }
+  &.active {
+    h5 {
+      color: $green-primary;
+      font-weight: 800;
+    }
+    span {
+      background-color: $green-primary;
+    }
+  }
+}

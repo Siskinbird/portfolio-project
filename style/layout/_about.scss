@@ -1,0 +1,56 @@
+@import '../variables';
+
+.about {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  .container {
+    display: flex;
+  }
+  height: 600px;
+  width: 100%;
+  &-info {
+    max-width: 445px;
+    padding-top: 16px;
+    &__buttons {
+      &-button{
+        margin-right: 30px;
+      }
+    }
+  }
+  &-text {
+    p {
+      margin-top: 40px;
+      line-height: 130%;
+    }
+    span {
+      font-size: 50px;
+      line-height: 1;
+      color: #fff;
+      font-weight: 600;
+      min-width: 55px;
+      margin-left: 14px;
+    }
+    &__row {
+      margin: 30px -15px;
+      &-media__body {
+        padding-left: 4px;
+        padding-top: 4px;
+        flex: 1;
+      }
+    }
+  }
+  &-images {
+    img {
+      padding: 4px;
+    }
+    &__left {
+      align-items: flex-end;
+    }
+    &__right {
+      align-items: flex-start;
+    }
+  }
+  &-info {
+    padding-left: 50px;
+  }
+}
