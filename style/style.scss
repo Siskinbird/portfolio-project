@@ -206,3 +206,34 @@ body {
     flex: 1;
     padding-left: 25px;
 }
+
+
+/* ----------------------
+*	owl
+---------------------------*/
+.swiper-pagination {
+    margin-top: 30px;
+    position: relative;
+}
+.swiper-pagination-bullet {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    transition: ease all 0.55s;
+    border-radius: 50%;
+    margin: 0 5px;
+    .theme-light & {
+        border-color: $theme-sidebar-color;
+    }
+    &-active {
+        background: #ffffff;
+
+        .theme-light & {
+            background: $theme-sidebar-color;
+        }
+    }
+}
