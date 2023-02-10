@@ -138,5 +138,48 @@ body {
 }
 
 
-
-
+//SERVICES
+.big-size {
+    width: 145px;
+    height: 52px;
+}
+.services-wrapper {
+    margin-top: 45px;
+}
+.service-item {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    &__box {
+        padding: 40px;
+        overflow: hidden;
+        background: $theme-sidebar-color;
+        transition: ease background 0.35s;
+        &:hover {
+            background: $green-primary;
+        }
+        &-content {
+            padding-left: 25px;
+            h5 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            p {
+                line-height: 130%;
+            }
+        }
+    }
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+.icon-mobile {
+    &:before {
+        content: "\e000";
+    }
+}

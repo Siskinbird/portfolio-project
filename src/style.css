@@ -395,6 +395,11 @@ ul {
   display: flex;
 }
 
+.flex-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -433,7 +438,7 @@ ul {
   justify-content: center;
 }
 
-.v-icon-services, .v-icon-portfolio, .v-icon-home, .v-icon-contacts, .v-icon-blogs, .v-icon-about, .v-icon-instagram, .v-icon-linkedin, .v-icon-youtube, .v-icon-git, .v-icon-telegram {
+.v-icon-web, .v-icon-seo, .v-icon-hosting, .v-icon-services, .v-icon-portfolio, .v-icon-home, .v-icon-contacts, .v-icon-blogs, .v-icon-about, .v-icon-instagram, .v-icon-linkedin, .v-icon-youtube, .v-icon-git, .v-icon-telegram {
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -448,7 +453,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease-in-out;
 }
-.v-icon-services:hover, .v-icon-portfolio:hover, .v-icon-home:hover, .v-icon-contacts:hover, .v-icon-blogs:hover, .v-icon-about:hover, .v-icon-instagram:hover, .v-icon-linkedin:hover, .v-icon-youtube:hover, .v-icon-git:hover, .v-icon-telegram:hover {
+.v-icon-web:hover, .v-icon-seo:hover, .v-icon-hosting:hover, .v-icon-services:hover, .v-icon-portfolio:hover, .v-icon-home:hover, .v-icon-contacts:hover, .v-icon-blogs:hover, .v-icon-about:hover, .v-icon-instagram:hover, .v-icon-linkedin:hover, .v-icon-youtube:hover, .v-icon-git:hover, .v-icon-telegram:hover {
   background-color: #5AB159;
 }
 
@@ -495,6 +500,18 @@ ul {
 .v-icon-services {
   mask-image: url("../resources/img/nav-icons/services.svg");
   -webkit-mask-image: url("../resources/img/nav-icons/services.svg");
+}
+.v-icon-hosting {
+  mask-image: url("../resources/img/services/host.svg");
+  -webkit-mask-image: url("../resources/img/services/host.svg");
+}
+.v-icon-seo {
+  mask-image: url("../resources/img/services/seo.svg");
+  -webkit-mask-image: url("../resources/img/services/seo.svg");
+}
+.v-icon-web {
+  mask-image: url("../resources/img/services/webdew.svg");
+  -webkit-mask-image: url("../resources/img/services/webdew.svg");
 }
 
 a {
@@ -1059,6 +1076,53 @@ body {
 }
 .experience-box img {
   max-width: 100%;
+}
+
+.big-size {
+  width: 145px;
+  height: 52px;
+}
+
+.services-wrapper {
+  margin-top: 45px;
+}
+
+.service-item {
+  margin-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
+.service-item__box {
+  padding: 40px;
+  overflow: hidden;
+  background: #333342;
+  transition: ease background 0.35s;
+}
+.service-item__box:hover {
+  background: #2fbf71;
+}
+.service-item__box-content {
+  padding-left: 25px;
+}
+.service-item__box-content h5 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.service-item__box-content p {
+  line-height: 130%;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.icon-mobile:before {
+  content: "\e000";
 }
 
 /*# sourceMappingURL=style.css.map */
