@@ -629,6 +629,20 @@ button {
   font-weight: 600;
   border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
+.sidebar-head-links__link:hover h5 {
+  color: #FFFFFF;
+  font-weight: 800;
+}
+.sidebar-head-links__link:hover span {
+  background-color: #FFFFFF;
+}
+.sidebar-head-links__link.active h5 {
+  color: #2fbf71;
+  font-weight: 800;
+}
+.sidebar-head-links__link.active span {
+  background-color: #2fbf71;
+}
 .sidebar-head-links__link h5 {
   padding-left: 16px;
   font-weight: 400;
@@ -643,21 +657,6 @@ button {
 .sidebar-social {
   gap: 15px;
   margin: 0 auto 15px;
-}
-
-li:hover h5 {
-  color: #FFFFFF;
-  font-weight: 800;
-}
-li:hover span {
-  background-color: #FFFFFF;
-}
-li.active h5 {
-  color: #2fbf71;
-  font-weight: 800;
-}
-li.active span {
-  background-color: #2fbf71;
 }
 
 /**------------------------Light theme variables---------------------------*/
@@ -855,70 +854,7 @@ li.active span {
   padding-left: 50px;
 }
 
-body {
-  overflow-x: hidden;
-  font-family: "SF Pro", sans-serif;
-  background-color: #38384e;
-  color: white;
-}
-
-/**----------------------------------------*/
-#wrapper {
-  display: none;
-  transition: opacity 1s ease-in;
-  overflow: hidden;
-}
-
-.container {
-  position: relative;
-  max-width: 1140px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (max-width: 1200px) {
-  .container {
-    width: 950px;
-  }
-}
-
-.main {
-  left: 250px;
-  position: absolute;
-  height: auto;
-  width: calc(100% - 250px);
-}
-@media (max-width: 1200px) {
-  .main {
-    display: block;
-    width: 100%;
-    position: relative;
-    left: 0;
-  }
-}
-
-/**----------------------------HEADER MOBILE-------------------*/
-.header-mobile {
-  padding: 15px;
-  display: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 4;
-  background: #38384e;
-}
-.header-mobile__label {
-  font-weight: 800;
-  font-size: 25px;
-  line-height: 1;
-}
-@media (max-width: 1200px) {
-  .header-mobile {
-    display: flex;
-  }
-}
-
+/**------------------------Light theme variables---------------------------*/
 .skills-column {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1004,6 +940,125 @@ body {
   left: 0;
   border-top: 5px solid #165934;
   border-left: 5px solid transparent;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "SF Pro", sans-serif;
+  background-color: #38384e;
+  color: white;
+}
+
+/**----------------------------------------*/
+#wrapper {
+  display: none;
+  transition: opacity 1s ease-in;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 950px;
+  }
+}
+
+.main {
+  left: 250px;
+  position: absolute;
+  height: auto;
+  width: calc(100% - 250px);
+}
+@media (max-width: 1200px) {
+  .main {
+    display: block;
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+}
+
+/**----------------------------HEADER MOBILE-------------------*/
+.header-mobile {
+  padding: 15px;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  background: #38384e;
+}
+.header-mobile__label {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1;
+}
+@media (max-width: 1200px) {
+  .header-mobile {
+    display: flex;
+  }
+}
+
+.experience-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin-top: 40px;
+  background: #333342;
+}
+.experience-box__item {
+  position: relative;
+}
+.experience-box__item h6 {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.experience-box__item label {
+  font-size: 13px;
+}
+.experience-box__item p {
+  line-height: 130%;
+  margin-top: 14px;
+}
+.experience-box__item-time {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  background: #2fbf71;
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.experience-box__wrapper {
+  padding: 35px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+.experience-box__item-col-16 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.experience-box__item-col-84 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.experience-box img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

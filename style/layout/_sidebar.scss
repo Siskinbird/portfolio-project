@@ -11,7 +11,7 @@
   left: 0;
   position: fixed;
   z-index: 4;
-  background-color: #333342;
+  background-color: $theme-sidebar-color;
   @include _1200 {
     transition: ease all 0.35s;
     left: -300px;
@@ -45,7 +45,26 @@
     cursor: pointer;
     transition: .3s ease-in-out all;
     font-weight: 600;
-    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    border-top: 1px solid $separator;
+
+      &:hover {
+        h5 {
+          color: $white;
+          font-weight: 800;
+        }
+        span {
+          background-color: $white;
+        }
+      }
+      &.active {
+        h5 {
+          color: $green-primary;
+          font-weight: 800;
+        }
+        span {
+          background-color: $green-primary;
+        }
+      }
 
     h5 {
       padding-left: 16px;
@@ -63,23 +82,3 @@
   }
 }
 
-li {
-  &:hover {
-    h5 {
-      color: #FFFFFF;
-      font-weight: 800;
-    }
-    span {
-      background-color: #FFFFFF;
-    }
-  }
-  &.active {
-    h5 {
-      color: $green-primary;
-      font-weight: 800;
-    }
-    span {
-      background-color: $green-primary;
-    }
-  }
-}
