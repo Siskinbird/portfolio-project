@@ -1082,6 +1082,9 @@ body {
   width: 145px;
   height: 52px;
 }
+.big-size:hover {
+  background: white;
+}
 
 .services-wrapper {
   margin-top: 45px;
@@ -1123,6 +1126,28 @@ body {
 
 .icon-mobile:before {
   content: "\e000";
+}
+
+.swiper {
+  margin-top: 45px;
+}
+
+.swiper-slide {
+  padding: 35px;
+  background: #333342;
+  width: 542.5px;
+  margin-right: 25px;
+}
+
+.slide-image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.slide-description {
+  flex: 1;
+  padding-left: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

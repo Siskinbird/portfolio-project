@@ -13,32 +13,32 @@ const txt = 'Я — веб-разработчик, работаю с орган�
 /**-----------------------------PRELOADER ANIMATION--------------------------------*/
 
 
-setTimeout(function() {
-    let preloader = document.getElementById("preloader");
-    let wrapper = document.getElementById('wrapper')
-    preloader.style.opacity = 0;
-    setTimeout(function() {
-        preloader.style.display = "none";
-        wrapper.style.display = "block";
-        wrapper.style.opacity = 1;
-    }, 1000);
-}, 3000);
+// setTimeout(function() {
+//     let preloader = document.getElementById("preloader");
+//     let wrapper = document.getElementById('wrapper')
+//     preloader.style.opacity = 0;
+//     setTimeout(function() {
+//         preloader.style.display = "none";
+//         wrapper.style.display = "block";
+//         wrapper.style.opacity = 1;
+//     }, 1000);
+// }, 3000);
 
 /**-----------------------------WHAT'S YOU'R TIME THEME */
 
 
-const whatsTime = () => {
-    let dateToDay = new Date();
-    let timeNow = dateToDay.getTime();
-    dateToDay.setTime(timeNow);
-    let theHour = dateToDay.getHours();
-    console.log(theHour);
-    if(theHour > 20) {
-        body.classList.add('lightTheme')
-    } else {
-        body.classList.remove('lightTheme')
-    }
-}
+// const whatsTime = () => {
+//     let dateToDay = new Date();
+//     let timeNow = dateToDay.getTime();
+//     dateToDay.setTime(timeNow);
+//     let theHour = dateToDay.getHours();
+//     console.log(theHour);
+//     if(theHour > 20) {
+//         body.classList.add('lightTheme')
+//     } else {
+//         body.classList.remove('lightTheme')
+//     }
+// }
 
 
 
@@ -104,8 +104,11 @@ function addLightTheme() {
     }
 }
 
-
-
-
 addLightTheme();
+
+
+/** SWIPER SLIDER INIT*/
+
+
+
 

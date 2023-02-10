@@ -7,9 +7,10 @@
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
     <title>Chizhov Dmitry</title>
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="src/style.css">
 </head>
-<body id="body" class="body" onload="whatsTime();">
+<body id="body" class="body" >
 <!--    <div class="preloader" id="preloader" >-->
 <!--        <div class="preloader-ray"></div>-->
 <!--        <div class="container">-->
@@ -359,6 +360,100 @@
                 </div>
             </div>
         </section>
+        <div class="separator"></div>
+        <section class="testimonials">
+            <div class="container">
+                <h3 class="title">testimonials</h3>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide d-flex al-start">
+                            <div class="slide-image">
+                                <img src="resources/img/experience/one.png">
+                            </div>
+                            <div class="slide-description">
+                                <p>Bla bla bla bla bla bla bla bla bla bla bla
+                                    bla bla bla bla bla bla bla bla bla bla
+                                </p>
+                                <h6>Vasya Pupkin</h6>
+                                <p>Seo super star</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex al-start">
+                            <div class="slide-image">
+                                <img src="resources/img/experience/one.png">
+                            </div>
+                            <div class="slide-description">
+                                <p>Bla bla bla bla bla bla bla bla bla bla bla
+                                    bla bla bla bla bla bla bla bla bla bla
+                                </p>
+                                <h6>Vasya Pupkin</h6>
+                                <p>Seo super star</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex al-start">
+                            <div class="slide-image">
+                                <img src="resources/img/experience/one.png">
+                            </div>
+                            <div class="slide-description">
+                                <p>Bla bla bla bla bla bla bla bla bla bla bla
+                                    bla bla bla bla bla bla bla bla bla bla
+                                </p>
+                                <h6>Vasya Pupkin</h6>
+                                <p>Seo super star</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex al-start">
+                            <div class="slide-image">
+                                <img src="resources/img/experience/one.png">
+                            </div>
+                            <div class="slide-description">
+                                <p>Bla bla bla bla bla bla bla bla bla bla bla
+                                    bla bla bla bla bla bla bla bla bla bla
+                                </p>
+                                <h6>Vasya Pupkin</h6>
+                                <p>Seo super star</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex al-start">
+                            <div class="slide-image">
+                                <img src="resources/img/experience/one.png">
+                            </div>
+                            <div class="slide-description">
+                                <p>Bla bla bla bla bla bla bla bla bla bla bla
+                                    bla bla bla bla bla bla bla bla bla bla
+                                </p>
+                                <h6>Vasya Pupkin</h6>
+                                <p>Seo super star</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex al-start">
+                            <div class="slide-image">
+                                <img src="resources/img/experience/one.png">
+                            </div>
+                            <div class="slide-description">
+                                <p>Bla bla bla bla bla bla bla bla bla bla bla
+                                    bla bla bla bla bla bla bla bla bla bla
+                                </p>
+                                <h6>Vasya Pupkin</h6>
+                                <p>Seo super star</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+<!--                    <div class="swiper-pagination"></div>-->
+
+                    <!-- If we need navigation buttons -->
+<!--                    <div class="swiper-button-prev"></div>-->
+<!--                    <div class="swiper-button-next"></div>-->
+
+                    <!-- If we need scrollbar -->
+<!--                    <div class="swiper-scrollbar"></div>-->
+                </div>
+            </div>
+        </section>
     </main>
     <!-- /.main -->
 
@@ -372,6 +467,38 @@
     </footer>
 </div>
     <script src="./resources/js/app.js"></script>
+
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+        slidesPerView: 'auto',
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="https://kit.fontawesome.com/ad0d8a00dd.js" crossorigin="anonymous"></script>
     <script src="https://js.cx/libs/animate.js"></script>
 </body>

@@ -142,6 +142,9 @@ body {
 .big-size {
     width: 145px;
     height: 52px;
+    &:hover {
+        background: white;
+    }
 }
 .services-wrapper {
     margin-top: 45px;
@@ -182,4 +185,24 @@ body {
     &:before {
         content: "\e000";
     }
+}
+
+//TESTIMONIALS SWIPER SLIDER
+.swiper {
+    margin-top: 45px;
+}
+.swiper-slide {
+    padding: 35px;
+    background: $theme-sidebar-color;
+    width: 542.5px;
+    margin-right: 25px;
+}
+.slide-image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.slide-description {
+    flex: 1;
+    padding-left: 25px;
 }
