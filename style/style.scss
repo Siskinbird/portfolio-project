@@ -208,9 +208,7 @@ body {
 }
 
 
-/* ----------------------
-*	owl
----------------------------*/
+
 .swiper-pagination {
     margin-top: 30px;
     position: relative;
@@ -231,7 +229,6 @@ body {
     }
     &-active {
         background: #ffffff;
-
         .theme-light & {
             background: $theme-sidebar-color;
         }
