@@ -19,6 +19,7 @@
 @import "layout/lightTheme";
 @import "layout/about";
 @import "layout/education";
+@import "layout/burger";
 
 body {
     overflow-x: hidden;
@@ -194,8 +195,12 @@ body {
 .swiper-slide {
     padding: 35px;
     background: $theme-sidebar-color;
-    width: 542.5px;
-    margin-right: 25px;
+    max-width: 532px;
+    //@include _1200 {
+    //    width: 450px;
+    //}
+    margin: 15px 25px 25px 0;
+    //margin-right: 25px;
 }
 .slide-image {
     width: 100px;

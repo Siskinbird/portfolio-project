@@ -27,18 +27,18 @@ const txt = 'Я — веб-разработчик, работаю с орган�
 /**-----------------------------WHAT'S YOU'R TIME THEME */
 
 
-// const whatsTime = () => {
-//     let dateToDay = new Date();
-//     let timeNow = dateToDay.getTime();
-//     dateToDay.setTime(timeNow);
-//     let theHour = dateToDay.getHours();
-//     console.log(theHour);
-//     if(theHour > 20) {
-//         body.classList.add('lightTheme')
-//     } else {
-//         body.classList.remove('lightTheme')
-//     }
-// }
+const whatsTime = () => {
+    let dateToDay = new Date();
+    let timeNow = dateToDay.getTime();
+    dateToDay.setTime(timeNow);
+    let theHour = dateToDay.getHours();
+    console.log(theHour);
+    if(theHour > 20) {
+        body.classList.add('lightTheme')
+    } else {
+        body.classList.remove('lightTheme')
+    }
+}
 
 
 
