@@ -190,10 +190,14 @@ body {
 
 //FEEDBACK CONTACT
 .feedback {
+    &-wrapper {
+        margin-top: 45px;
+    }
     &-contact {
         &__info{
             padding: 30px;
             background: $theme-sidebar-color;
+            height: 370px;
             h4 {
                 margin-bottom: 20px;
                 font-size: 28px;
@@ -205,8 +209,6 @@ body {
                 color: #FFFFFF;
             }
             .phone, .email {
-                //margin: 10px;
-                //padding: 5px;
                 margin-top: 30px;
                 img {
                    padding-right: 10px;
@@ -215,12 +217,12 @@ body {
         }
     }
     &-form {
-        //margin-left: 20px;
+        margin-left: 20px;
         padding: 30px;
         background: $theme-sidebar-color;
-
         h4 {
             font-weight: 500;
+            padding-left: 30px;
             color: #fff;
             font-size: 22px;
             margin-bottom: 20px;
