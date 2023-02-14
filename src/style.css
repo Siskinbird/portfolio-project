@@ -617,7 +617,7 @@ button {
   }
 }
 .sidebar-head {
-  background: url("/resources/img/circle.png") -72px -220px no-repeat;
+  background: url("../../resources/img/circle.png") -72px -220px no-repeat;
 }
 .sidebar-head__logo {
   margin-top: 66px;
