@@ -197,7 +197,7 @@ body {
         &__info{
             padding: 30px;
             background: $theme-sidebar-color;
-            height: 370px;
+            height: 400px;
             h4 {
                 margin-bottom: 20px;
                 font-size: 28px;
@@ -220,9 +220,11 @@ body {
         margin-left: 20px;
         padding: 30px;
         background: $theme-sidebar-color;
+        button {
+            margin-top: 30px;
+        }
         h4 {
             font-weight: 500;
-            padding-left: 30px;
             color: #fff;
             font-size: 22px;
             margin-bottom: 20px;

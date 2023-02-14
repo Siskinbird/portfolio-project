@@ -402,7 +402,6 @@ ul {
 
 .p-15-rl {
   padding-right: 15px;
-  padding-left: 15px;
 }
 
 .form-group {
@@ -1281,7 +1280,7 @@ body {
 .feedback-contact__info {
   padding: 30px;
   background: #333342;
-  height: 370px;
+  height: 400px;
 }
 .feedback-contact__info h4 {
   margin-bottom: 20px;
@@ -1304,9 +1303,11 @@ body {
   padding: 30px;
   background: #333342;
 }
+.feedback-form button {
+  margin-top: 30px;
+}
 .feedback-form h4 {
   font-weight: 500;
-  padding-left: 30px;
   color: #fff;
   font-size: 22px;
   margin-bottom: 20px;
