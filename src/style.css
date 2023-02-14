@@ -617,7 +617,7 @@ button {
   }
 }
 .sidebar-head {
-  background: url("../../resources/img/circle.png") -72px -220px no-repeat;
+  background: url("/resources/img/circle.png") -72px -220px no-repeat;
 }
 .sidebar-head__logo {
   margin-top: 66px;
@@ -626,7 +626,7 @@ button {
   border-radius: 50%;
   z-index: 2;
   border: 6px solid #FFFFFF;
-  background: url("../../resources/img/avatar.jpg") 0 0/100% 100% no-repeat;
+  background: url("/resources/img/avatar.jpg") 0 0/100% 100% no-repeat;
 }
 .sidebar-head__title {
   letter-spacing: 4px;

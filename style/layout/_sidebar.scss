@@ -17,7 +17,7 @@
     left: -300px;
   }
   &-head {
-    background: url('../../resources/img/circle.png') -72px -220px no-repeat;
+    background: url('/resources/img/circle.png') -72px -220px no-repeat;
     &__logo {
       margin-top: 66px;
       width: 100px;
@@ -25,7 +25,7 @@
       border-radius: 50%;
       z-index: 2;
       border: 6px solid $white;
-      background: url("../../resources/img/avatar.jpg")  0 0/100% 100% no-repeat;
+      background: url("/resources/img/avatar.jpg")  0 0/100% 100% no-repeat;
     }
     &__title {
       letter-spacing: 4px;
