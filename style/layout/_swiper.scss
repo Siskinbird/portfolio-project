@@ -1,0 +1,62 @@
+@import "../variables";
+
+//TESTIMONIALS SWIPER SLIDER
+.swiper {
+  margin-top: 45px;
+}
+.swiper-slide {
+  padding: 35px;
+  background: $theme-sidebar-color;
+  max-width: 532px;
+  //@include _1200 {
+  //    width: 450px;
+  //}
+  margin: 15px 25px 25px 0;
+  //margin-right: 25px;
+}
+.slide-image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.slide-description {
+  flex: 1;
+  padding-left: 25px;
+  p {
+    opacity: 0.5;
+    letter-spacing: -1px;
+  }
+  h6{
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+
+
+.swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  transition: ease all 0.55s;
+  border-radius: 50%;
+  margin: 0 5px;
+  .theme-light & {
+    border-color: $theme-sidebar-color;
+  }
+  &-active {
+    background: #ffffff;
+    .theme-light & {
+      background: $theme-sidebar-color;
+    }
+  }
+}

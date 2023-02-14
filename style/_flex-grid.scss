@@ -1,10 +1,35 @@
+.m-15-tb {
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.p-15-rl {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
 // Настройки флекс контейнера
 .d-flex {
     display: flex;
 }
+.flex-100 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.flex-66 {
+    flex: 0 0 66.666666%;
+    max-width: 66.666666%;
+}
 .flex-50 {
     flex: 0 0 50%;
     max-width: 50%;
+}
+.flex-33 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
 }
 .flex-column {
     flex-direction: column;

@@ -391,13 +391,42 @@ ul {
 }
 
 /**------------------------Light theme variables---------------------------*/
+.m-15-tb {
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+.p-15-rl {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
 .d-flex {
   display: flex;
+}
+
+.flex-100 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.flex-66 {
+  flex: 0 0 66.666666%;
+  max-width: 66.666666%;
 }
 
 .flex-50 {
   flex: 0 0 50%;
   max-width: 50%;
+}
+
+.flex-33 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
 }
 
 .flex-column {
@@ -1010,6 +1039,65 @@ button {
   transform: rotate(45deg);
 }
 
+/**------------------------Light theme variables---------------------------*/
+.swiper {
+  margin-top: 45px;
+}
+
+.swiper-slide {
+  padding: 35px;
+  background: #333342;
+  max-width: 532px;
+  margin: 15px 25px 25px 0;
+}
+
+.slide-image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.slide-description {
+  flex: 1;
+  padding-left: 25px;
+}
+.slide-description p {
+  opacity: 0.5;
+  letter-spacing: -1px;
+}
+.slide-description h6 {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  transition: ease all 0.55s;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.theme-light .swiper-pagination-bullet {
+  border-color: #333342;
+}
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+.theme-light .swiper-pagination-bullet-active {
+  background: #333342;
+}
+
 body {
   overflow-x: hidden;
   font-family: "SF Pro", sans-serif;
@@ -1179,53 +1267,50 @@ body {
   content: "\e000";
 }
 
-.swiper {
-  margin-top: 45px;
-}
-
-.swiper-slide {
-  padding: 35px;
+.feedback-contact__info {
+  padding: 30px;
   background: #333342;
-  max-width: 532px;
-  margin: 15px 25px 25px 0;
 }
-
-.slide-image {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
+.feedback-contact__info h4 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
 }
-
-.slide-description {
-  flex: 1;
-  padding-left: 25px;
+.feedback-contact__info a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
-
-.swiper-pagination {
+.feedback-contact__info .phone, .feedback-contact__info .email {
   margin-top: 30px;
-  position: relative;
+}
+.feedback-contact__info .phone img, .feedback-contact__info .email img {
+  padding-right: 10px;
+}
+.feedback-form {
+  padding: 30px;
+  background: #333342;
+}
+.feedback-form h4 {
+  font-weight: 500;
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
-.swiper-pagination-bullet {
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  width: 10px;
-  height: 10px;
-  background: transparent;
-  border: 1px solid #ffffff;
-  transition: ease all 0.55s;
-  border-radius: 50%;
-  margin: 0 5px;
+.form-controller {
+  color: #fff;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  width: 100%;
+  height: calc(2em + 0.75rem + 2px);
 }
-.theme-light .swiper-pagination-bullet {
-  border-color: #333342;
-}
-.swiper-pagination-bullet-active {
-  background: #ffffff;
-}
-.theme-light .swiper-pagination-bullet-active {
-  background: #333342;
+
+.h100 {
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

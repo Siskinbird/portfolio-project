@@ -20,7 +20,7 @@
 @import "layout/about";
 @import "layout/education";
 @import "layout/burger";
-
+@import "layout/swiper";
 body {
     overflow-x: hidden;
     font-family: $font-primary;
@@ -188,54 +188,56 @@ body {
     }
 }
 
-//TESTIMONIALS SWIPER SLIDER
-.swiper {
-    margin-top: 45px;
-}
-.swiper-slide {
-    padding: 35px;
-    background: $theme-sidebar-color;
-    max-width: 532px;
-    //@include _1200 {
-    //    width: 450px;
-    //}
-    margin: 15px 25px 25px 0;
-    //margin-right: 25px;
-}
-.slide-image {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-}
-.slide-description {
-    flex: 1;
-    padding-left: 25px;
-}
-
-
-
-.swiper-pagination {
-    margin-top: 30px;
-    position: relative;
-}
-.swiper-pagination-bullet {
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
-    width: 10px;
-    height: 10px;
-    background: transparent;
-    border: 1px solid #ffffff;
-    transition: ease all 0.55s;
-    border-radius: 50%;
-    margin: 0 5px;
-    .theme-light & {
-        border-color: $theme-sidebar-color;
-    }
-    &-active {
-        background: #ffffff;
-        .theme-light & {
+//FEEDBACK CONTACT
+.feedback {
+    &-contact {
+        &__info{
+            padding: 30px;
             background: $theme-sidebar-color;
+            h4 {
+                margin-bottom: 20px;
+                font-size: 28px;
+                font-weight: 600;
+            }
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            .phone, .email {
+                //margin: 10px;
+                //padding: 5px;
+                margin-top: 30px;
+                img {
+                   padding-right: 10px;
+                }
+            }
         }
     }
+    &-form {
+        //margin-left: 20px;
+        padding: 30px;
+        background: $theme-sidebar-color;
+
+        h4 {
+            font-weight: 500;
+            color: #fff;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.form-controller {
+    color: #fff;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    width: 100%;
+    height: calc(2em + 0.75rem + 2px);
+}
+.h100 {
+    height: auto;
 }
