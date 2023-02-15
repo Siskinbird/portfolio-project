@@ -8,8 +8,45 @@ const txt = 'Я — веб-разработчик, работаю с орган�
         '                            ' +
         'Специализируюсь на создании современных веб сайтов, приложений, интернет магазинов.';
 
+/**-----------------------------MENU ACTIVE LINK--------------------------------*/
 
-
+const links = sideBar.getElementsByClassName('sidebar-head-links__link')
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function () {
+        let current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    })
+}
+/**-----------------------------SCROLL ACTIVE LINK--------------------------------*/
+function getBodyScrollTop() {
+    let offset = self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop);
+    if (offset > 500) {
+        links[0].classList.remove('active')
+        links[1].classList.add('active')
+        //document.querySelector('#navbar').className = "absolute-menu";
+        console.log(offset);
+    }
+    if (offset > 1000) {
+        links[1].classList.remove('active')
+        links[2].classList.add('active')
+        //document.querySelector('#navbar').className = "absolute-menu";
+        console.log(offset);
+    }
+    if (offset > 1800) {
+        links[2].classList.remove('active')
+        links[3].classList.add('active')
+        //document.querySelector('#navbar').className = "absolute-menu";
+        console.log(offset);
+    }
+    if (offset > screen.height - 300) {
+        //document.querySelector('#navbar').className = "fixed-menu-top";
+        console.log(offset)
+    }
+}
+// let scrollPosition = body.scrollTop
+// console.log(scrollPosition);
+window.addEventListener("scroll", getBodyScrollTop);
 /**-----------------------------PRELOADER ANIMATION--------------------------------*/
 
 
