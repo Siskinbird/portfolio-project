@@ -19,10 +19,16 @@
   /**
    * Remove the margin in all browsers.
    */
-  
-  body {
-    margin: 0;
-  }
+
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "SF Pro", sans-serif;;
+  background-color: #38384EFF;
+  color: white;
+}
+
   
   /**
    * Render the `main` element consistently in IE.

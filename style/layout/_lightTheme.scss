@@ -3,6 +3,53 @@
 /**----------Light theme classes-----------*/
 
 .lightTheme {
+  .title, .subTitle {
+    color: $light-theme-text;
+  }
+  .separator {
+    background: #FFFFFF;
+  }
+  .count {
+    color: $light-theme-text;
+  }
+  .swiper-pagination-bullet {
+    background: $light-theme-text;
+    border: 1px solid #000000;
+  }
+  .v-icon-seo, .v-icon-web, .v-icon-dew, .v-icon-hosting {
+    background: $light-theme-text;
+  }
+
+  .experience-box,
+  .feedback-form,
+  .feedback-contact__info,
+  .swiper-slide,
+  .education-column__list,
+  .service-item__box  {
+    background: $light-theme-sidebar-bg;
+    color: $light-theme-text;
+  }
+  .about,
+  .education,
+  .experience,
+  .services,
+  .feedback,
+  .testimonials {
+    background-color: #FFFFFF;
+    color: $light-theme-text;
+  }
+  .feedback{
+    h4, a {
+      color: $light-theme-text;
+    }
+  }
+
+  .form-controller {
+    border: solid 1px  rgba(0, 0, 0, 0.24);
+  }
+  .separator::after {
+    background: #ffffff;
+  }
   .header-mobile {
     background-color: #FFFFFF;
     color: #333342;

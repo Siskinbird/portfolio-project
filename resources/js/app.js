@@ -20,9 +20,9 @@ for (let i = 0; i < links.length; i++) {
 }
 /**-----------------------------SCROLL ACTIVE LINK--------------------------------*/
 function activeRemover() {
-    for (let i = 0; i < links.length; i++) {
-        if(links[i].classList.contains('active')) {
-            links[i].classList.remove('active')
+    for(let link of links) {
+        if(link.classList.contains('active')) {
+            link.classList.remove('active')
         }
     }
 }

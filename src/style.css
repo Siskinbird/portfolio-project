@@ -54,6 +54,10 @@ html {
  */
 body {
   margin: 0;
+  overflow-x: hidden;
+  font-family: "SF Pro", sans-serif;
+  background-color: #38384e;
+  color: white;
 }
 
 /**
@@ -793,6 +797,49 @@ button {
 
 /**------------------------Light theme variables---------------------------*/
 /**----------Light theme classes-----------*/
+.lightTheme .title, .lightTheme .subTitle {
+  color: #38384e;
+}
+.lightTheme .separator {
+  background: #FFFFFF;
+}
+.lightTheme .count {
+  color: #38384e;
+}
+.lightTheme .swiper-pagination-bullet {
+  background: #38384e;
+  border: 1px solid #000000;
+}
+.lightTheme .v-icon-seo, .lightTheme .v-icon-web, .lightTheme .v-icon-dew, .lightTheme .v-icon-hosting {
+  background: #38384e;
+}
+.lightTheme .experience-box,
+.lightTheme .feedback-form,
+.lightTheme .feedback-contact__info,
+.lightTheme .swiper-slide,
+.lightTheme .education-column__list,
+.lightTheme .service-item__box {
+  background: #f7f7ff;
+  color: #38384e;
+}
+.lightTheme .about,
+.lightTheme .education,
+.lightTheme .experience,
+.lightTheme .services,
+.lightTheme .feedback,
+.lightTheme .testimonials {
+  background-color: #FFFFFF;
+  color: #38384e;
+}
+.lightTheme .feedback h4, .lightTheme .feedback a {
+  color: #38384e;
+}
+.lightTheme .form-controller {
+  border: solid 1px rgba(0, 0, 0, 0.24);
+}
+.lightTheme .separator::after {
+  background: #ffffff;
+}
 .lightTheme .header-mobile {
   background-color: #FFFFFF;
   color: #333342;
@@ -815,7 +862,7 @@ button {
 .lightTheme .home-banner {
   position: relative;
   background-color: #FFFFFF;
-  color: #000000;
+  color: #38384e;
 }
 .lightTheme .home-banner:after {
   background: #f7f7ff;
@@ -1103,13 +1150,6 @@ button {
 }
 .theme-light .swiper-pagination-bullet-active {
   background: #333342;
-}
-
-body {
-  overflow-x: hidden;
-  font-family: "SF Pro", sans-serif;
-  background-color: #38384e;
-  color: white;
 }
 
 /**----------------------------------------*/
