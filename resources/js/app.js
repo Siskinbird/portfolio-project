@@ -19,34 +19,56 @@ for (let i = 0; i < links.length; i++) {
     })
 }
 /**-----------------------------SCROLL ACTIVE LINK--------------------------------*/
-function getBodyScrollTop() {
-    let offset = self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop);
-    if (offset > 500) {
-        links[0].classList.remove('active')
-        links[1].classList.add('active')
-        //document.querySelector('#navbar').className = "absolute-menu";
-        console.log(offset);
-    }
-    if (offset > 1000) {
-        links[1].classList.remove('active')
-        links[2].classList.add('active')
-        //document.querySelector('#navbar').className = "absolute-menu";
-        console.log(offset);
-    }
-    if (offset > 1800) {
-        links[2].classList.remove('active')
-        links[3].classList.add('active')
-        //document.querySelector('#navbar').className = "absolute-menu";
-        console.log(offset);
-    }
-    if (offset > screen.height - 300) {
-        //document.querySelector('#navbar').className = "fixed-menu-top";
-        console.log(offset)
+function activeRemover() {
+    for (let i = 0; i < links.length; i++) {
+        if(links[i].classList.contains('active')) {
+            links[i].classList.remove('active')
+        }
     }
 }
-// let scrollPosition = body.scrollTop
-// console.log(scrollPosition);
+function getBodyScrollTop() {
+    let offset = self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop);
+    // switch (offset) {
+    //     case 0 (offset > 0):
+    //         activeRemover()
+    //         links[0].classList.add('active');
+    //         break;
+    //     case 600 (offset > 600):
+    //         activeRemover()
+    //         links[1].classList.add('active');
+    //         break;
+    //     case 3000 (offset > 3000):
+    //         activeRemover()
+    //         links[2].classList.add('active');
+    //         break;
+    //     case 4000 (offset > 4100):
+    //         activeRemover()
+    //         links[5].classList.add('active');
+    //         break;
+    // }
+    if (offset > 0) {
+        activeRemover()
+        links[0].classList.add('active')
+    }
+    if (offset > 600) {
+        activeRemover()
+        links[1].classList.add('active')
+    }
+    if (offset > 3000) {
+        activeRemover()
+        links[2].classList.add('active')
+    }
+    if (offset > 3900) {
+        activeRemover()
+        links[3].classList.add('active')
+    }
+    if (offset > 4100) {
+        activeRemover()
+        links[5].classList.add('active')
+    }
+}
 window.addEventListener("scroll", getBodyScrollTop);
+
 /**-----------------------------PRELOADER ANIMATION--------------------------------*/
 
 
