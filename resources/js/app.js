@@ -10,17 +10,16 @@ const txt = 'Я — веб-разработчик, работаю с орган�
 
 /**-----------------------------SCROLL BEHAVIOR--------------------------------*/
 
-let anchorPoints = document.querySelectorAll('.sidebar-head-links__link');
+let anchorPoints = document.querySelectorAll('.sidelink');
 
 for (let i = 0; i < anchorPoints.length; i++) {
     anchorPoints[i].addEventListener('click', function (e) {
         e.preventDefault();
 
-        const blockId = e.target.getAttribute('href');
-
+        const blockId = e.target.closest('a').getAttribute('href');
         document.querySelector(blockId).scrollIntoView({
-            behavior: "smooth",
-            block: 'start'
+            block: 'start',
+            behavior: "smooth"
         });
     });
 }
