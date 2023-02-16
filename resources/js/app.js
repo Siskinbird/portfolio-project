@@ -8,6 +8,22 @@ const txt = 'Я — веб-разработчик, работаю с орган�
         '                            ' +
         'Специализируюсь на создании современных веб сайтов, приложений, интернет магазинов.';
 
+/**-----------------------------SCROLL BEHAVIOR--------------------------------*/
+
+let anchorPoints = document.querySelectorAll('.sidebar-head-links__link');
+
+for (let i = 0; i < anchorPoints.length; i++) {
+    anchorPoints[i].addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const blockId = e.target.getAttribute('href');
+
+        document.querySelector(blockId).scrollIntoView({
+            behavior: "smooth",
+            block: 'start'
+        });
+    });
+}
 /**-----------------------------MENU ACTIVE LINK--------------------------------*/
 
 const links = sideBar.getElementsByClassName('sidebar-head-links__link')
@@ -68,6 +84,7 @@ function getBodyScrollTop() {
     }
 }
 window.addEventListener("scroll", getBodyScrollTop);
+
 
 /**-----------------------------PRELOADER ANIMATION--------------------------------*/
 
