@@ -602,24 +602,6 @@ button {
 
 /**THEME SWITCH IMAGE BLOCK*/
 /**SEPARATOR FOR SECTIONS*/
-.separator {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  position: relative;
-}
-.separator:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  height: 1px;
-  background: #fff;
-  opacity: 0.1;
-}
-
 /**------------------Layout----------------------*/
 /**------------------------Light theme variables---------------------------*/
 /**-------------------------------SIDEBAR---------------------*/
@@ -648,7 +630,7 @@ button {
   height: 100px;
   border-radius: 50%;
   z-index: 2;
-  border: 6px solid #FFFFFF;
+  border: 10px solid #2fbf71;
   background: url("../resources/img/avatar.jpg") 0 0/100% 100% no-repeat;
 }
 .sidebar-head__title {
