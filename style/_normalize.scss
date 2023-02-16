@@ -156,10 +156,16 @@ body {
   
   /* Forms
      ========================================================================== */
-  input, textarea {
-    &::placeholder {
-      padding: 10px;
+  textarea {
+    padding-left: 10px;
+    padding-top: 10px;
+    &:focus{
+      outline:none;
     }
+
+    //&::placeholder {
+    //  padding: 10px;
+    //}
   }
   /**
    * 1. Change the font styles in all browsers.

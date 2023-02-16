@@ -1,7 +1,7 @@
 /**-----------------------------VARIABLES--------------------------------*/
 
 const body = document.getElementById('body');
-const themeSwitch = document.querySelector('.color_switch');
+const themeSwitch = document.querySelector('.theme-switcher');
 const sideBar = document.getElementById('sidebar');
 const desc = document.getElementById("desc");
 const txt = 'Я — веб-разработчик, работаю с организациями разного масштаба.\n' +

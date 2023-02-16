@@ -3,6 +3,9 @@
 *:after {
     box-sizing: border-box;
 }
+input {
+    padding-left: 10px;
+}
 
 @import "./fonts.scss";
 @import "./normalize.scss";
