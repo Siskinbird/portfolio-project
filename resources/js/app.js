@@ -10,7 +10,7 @@ const txt = 'Я — веб-разработчик, работаю с орган�
 
 /**-----------------------------SCROLL BEHAVIOR--------------------------------*/
 
-let anchorPoints = document.querySelectorAll('.sidelink');
+let anchorPoints = document.querySelectorAll('.side-link');
 
 for (let i = 0; i < anchorPoints.length; i++) {
     anchorPoints[i].addEventListener('click', function (e) {

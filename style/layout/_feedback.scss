@@ -1,0 +1,59 @@
+@import '../variables';
+//FEEDBACK CONTACT
+.feedback {
+  &-wrapper {
+    margin-top: 45px;
+  }
+  &-contact {
+    &__info{
+      padding: 30px;
+      background: $theme-sidebar-color;
+      height: 400px;
+      h4 {
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: 600;
+      }
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+      .phone, .email {
+        margin-top: 30px;
+        img {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  &-form {
+    margin-left: 20px;
+    padding: 30px;
+    background: $theme-sidebar-color;
+    button {
+      margin-top: 30px;
+    }
+    h4 {
+      font-weight: 500;
+      color: #fff;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.form-controller {
+  color: #fff;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  resize: none;
+  width: 100%;
+  height: calc(2em + 0.75rem + 2px);
+}
+.h100 {
+  height: auto;
+}
