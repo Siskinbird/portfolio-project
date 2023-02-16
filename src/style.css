@@ -852,6 +852,12 @@ button {
 }
 
 /**----------Light theme classes-----------*/
+.lightTheme {
+  background-color: #FFFFFF;
+}
+.lightTheme .skill-it .skill-bar {
+  background: #cccccc;
+}
 .lightTheme .title, .lightTheme .subTitle {
   color: #38384e;
 }
@@ -960,8 +966,7 @@ button {
 
 /**------------------------Light theme variables---------------------------*/
 .about {
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 60px;
   height: 600px;
   width: 100%;
 }
@@ -1360,6 +1365,16 @@ button {
 }
 
 /**----------------------------------------------*/
+hr {
+  box-sizing: content-box;
+  height: 1px;
+  overflow: visible;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  opacity: 0.1;
+}
+
 #wrapper {
   display: none;
   transition: opacity 1s ease-in;

@@ -74,12 +74,20 @@
 /**----------Light theme classes-----------*/
 
 .lightTheme {
+  background-color: #FFFFFF;
+  .skill-it {
+    .skill-bar{
+      background: #cccccc;
+    }
+  }
+
   .title, .subTitle {
     color: $light-theme-text;
   }
   .slider {
     background: #5AB159;
   }
+
   .separator {
     background: #FFFFFF;
   }

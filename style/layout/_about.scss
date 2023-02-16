@@ -1,8 +1,9 @@
 @import '../variables';
 
 .about {
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  //padding-bottom: 180px;
+  //border-bottom: 2px solid $separator;
   .container {
     display: flex;
   }
