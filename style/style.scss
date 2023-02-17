@@ -52,8 +52,21 @@ hr {
         width: 950px;
     }
     @include _979 {
-        width: 900px;
+        max-width: 900px;
     }
+    @include _768 {
+        max-width: 720px;
+    }
+    @include _706 {
+        max-width: 540px;
+    }
+    @include _533 {
+        max-width: 360px;
+    }
+    @include _400 {
+        max-width: 340px;
+    }
+
 }
 
 .main {

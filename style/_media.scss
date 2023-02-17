@@ -42,13 +42,23 @@
     @content;
   }
 }
-@mixin _600 {
-  @media (max-width: 600px){
+@mixin _706 {
+  @media (max-width: 706px){
     @content;
+  }
+}
+@mixin _533 {
+  @media (max-width: 533px) {
+    @content
   }
 }
 @mixin _480 {
   @media (max-width: 480px){
+    @content;
+  }
+}
+@mixin _400 {
+  @media (max-width: 400px){
     @content;
   }
 }

@@ -3,7 +3,15 @@
 
 .about {
   padding-top: 60px;
-
+  @include _979 {
+    padding-top: 700px;
+  }
+  @include _706 {
+    padding-top: 450px;
+  }
+  @include _533 {
+    padding-top: 250px;
+  }
   .container {
     display: flex;
   }
@@ -14,7 +22,9 @@
     padding-top: 16px;
 
     @include _979 {
-      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 680px;
       padding-top: 60px;
     }
     &__buttons {
@@ -48,6 +58,7 @@
   &-images {
     img {
       padding: 4px;
+      max-width: 100%;
     }
     &__left {
       align-items: flex-end;
@@ -58,9 +69,6 @@
   }
   &-info {
     padding-left: 50px;
-    @include _979 {
-
-    }
   }
   @include _979 {
     .container{

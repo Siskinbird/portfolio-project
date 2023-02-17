@@ -8,6 +8,7 @@
   height: 100vh;
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   &-banner {
+    padding-top: 100px;
     min-height: 100vh;
     overflow: hidden;
     position: relative;
@@ -33,16 +34,30 @@
     min-height: 100vh;
     @include _979 {
       flex-wrap: wrap;
+      margin-top: 100px;
+    }
+    @include _768{
+      margin-top: 200px;
+    }
+    @include _533 {
+      margin-top: 30px;
     }
 
     h6 {
       font-size: 25px;
       font-weight: 500;
       margin: 0 0 20px;
+      @include _706 {
+        font-size: 18px;
+      }
     }
     p{
       font-size: 18px;
       line-height: 32px;
+      @include _706 {
+        font-size: 16px;
+      }
+
     }
     h2 {
       font-size: 65px;
@@ -52,12 +67,29 @@
       @include _1333 {
         font-size: 52px;
       }
+      @include _706 {
+        font-size: 45px;
+      }
+      @include _533 {
+        font-size: 38px;
+      }
     }
     &__description {
       max-width: 590px;
       &-text {
         width: 450px;
         height: 190px;
+        @include _533 {
+          width: 100%;
+        }
+      }
+      @include _768 {
+        margin-right: auto;
+        margin-left: 38px;
+      }
+      @include _533 {
+        width: 100%;
+        margin-left: 0;
       }
     }
     &__photo {
@@ -73,7 +105,14 @@
       @include _979 {
         width: 666px;
         height: 666px;
-        margin-top: -260px;
+      }
+      @include _706 {
+        max-width: 510px;
+        height: 510px;
+      }
+      @include _533 {
+        width: 300px;
+        height: 300px;
       }
     }
   }
