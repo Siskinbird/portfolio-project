@@ -28,8 +28,12 @@
       padding-top: 60px;
     }
     &__buttons {
+
       &-button{
         margin-right: 30px;
+        @include _400 {
+          margin-right: 10px;
+        }
       }
     }
   }
@@ -69,6 +73,9 @@
   }
   &-info {
     padding-left: 50px;
+    @include _706 {
+      padding-left: 0;
+    }
   }
   @include _979 {
     .container{

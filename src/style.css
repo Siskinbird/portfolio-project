@@ -599,6 +599,11 @@ button {
   background: #0b0b13;
   color: #FFFFFF;
 }
+@media (max-width: 356px) {
+  .btn {
+    padding: 0 15px;
+  }
+}
 
 /**THEME SWITCH IMAGE BLOCK*/
 /**SEPARATOR FOR SECTIONS*/
@@ -785,12 +790,6 @@ button {
   .home-card__description {
     margin-right: auto;
     margin-left: 38px;
-  }
-}
-@media (max-width: 533px) {
-  .home-card__description {
-    width: 100%;
-    margin-left: 0;
   }
 }
 .home-card__photo {
@@ -1061,6 +1060,11 @@ button {
 .about-info__buttons-button {
   margin-right: 30px;
 }
+@media (max-width: 400px) {
+  .about-info__buttons-button {
+    margin-right: 10px;
+  }
+}
 .about-text p {
   margin-top: 40px;
   line-height: 130%;
@@ -1093,6 +1097,11 @@ button {
 }
 .about-info {
   padding-left: 50px;
+}
+@media (max-width: 706px) {
+  .about-info {
+    padding-left: 0;
+  }
 }
 @media (max-width: 979px) {
   .about .container {
@@ -1498,12 +1507,7 @@ hr {
 }
 @media (max-width: 533px) {
   .container {
-    max-width: 360px;
-  }
-}
-@media (max-width: 400px) {
-  .container {
-    max-width: 340px;
+    width: 100%;
   }
 }
 

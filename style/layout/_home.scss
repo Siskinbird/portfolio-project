@@ -87,10 +87,10 @@
         margin-right: auto;
         margin-left: 38px;
       }
-      @include _533 {
-        width: 100%;
-        margin-left: 0;
-      }
+      //@include _533 {
+      //  width: 100%;
+      //  margin-left: 0;
+      //}
     }
     &__photo {
       width: 540px;

@@ -40,6 +40,9 @@ button {
             }
         }
     }
+    @include _356 {
+        padding: 0 15px;
+    }
 }
 
 /**THEME SWITCH IMAGE BLOCK*/

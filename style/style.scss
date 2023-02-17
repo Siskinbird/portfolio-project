@@ -61,11 +61,11 @@ hr {
         max-width: 540px;
     }
     @include _533 {
-        max-width: 360px;
+        width: 100%;
     }
-    @include _400 {
-        max-width: 340px;
-    }
+    //@include _400 {
+    //    max-width: 340px;
+    //}
 
 }
 
