@@ -52,6 +52,10 @@
     }
     &__row {
       margin: 30px -15px;
+      @include _979 {
+        display: flex;
+        justify-content: space-between;
+      }
       &-media__body {
         padding-left: 4px;
         padding-top: 4px;

@@ -432,7 +432,7 @@ ul {
 
 .flex-66 {
   flex: 0 0 66.666667%;
-  max-width: 66.666667%;
+  width: 66.666667%;
 }
 
 .flex-50 {
@@ -442,7 +442,7 @@ ul {
 
 .flex-33 {
   flex: 0 0 33.333333%;
-  max-width: 33.333333%;
+  width: 33.333333%;
 }
 
 .flex-column {
@@ -1080,6 +1080,12 @@ button {
 .about-text__row {
   margin: 30px -15px;
 }
+@media (max-width: 979px) {
+  .about-text__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .about-text__row-media__body {
   padding-left: 4px;
   padding-top: 4px;
@@ -1115,7 +1121,13 @@ button {
   margin-bottom: 15px;
   margin-left: auto;
   flex: 0 0 58.333333%;
-  max-width: 58.333333%;
+  width: 58.333333%;
+}
+@media (max-width: 979px) {
+  .skills-column {
+    flex: 0 0 100%;
+    width: 100%;
+  }
 }
 .skills-column h3 {
   margin-bottom: 35px;
@@ -1163,7 +1175,13 @@ button {
 .education-column {
   padding-top: 35px;
   flex: 0 0 33.333333%;
-  max-width: 33.333333%;
+  width: 33.333333%;
+}
+@media (max-width: 979px) {
+  .education-column {
+    flex: 0 0 100%;
+    width: 100%;
+  }
 }
 .education-column__list {
   background: #333342;
@@ -1409,10 +1427,26 @@ button {
 .feedback-wrapper {
   margin-top: 45px;
 }
+@media (max-width: 979px) {
+  .feedback-wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 979px) {
+  .feedback-contact {
+    flex: 100%;
+    width: 100%;
+  }
+}
 .feedback-contact__info {
   padding: 30px;
   background: #333342;
   height: 400px;
+}
+@media (max-width: 979px) {
+  .feedback-contact__info {
+    height: auto;
+  }
 }
 .feedback-contact__info h4 {
   margin-bottom: 20px;
@@ -1429,10 +1463,21 @@ button {
 .feedback-contact__info .phone img, .feedback-contact__info .email img {
   padding-right: 10px;
 }
+@media (max-width: 979px) {
+  .feedback-message {
+    flex: 100%;
+    width: 100%;
+  }
+}
 .feedback-form {
   margin-left: 20px;
   padding: 30px;
   background: #333342;
+}
+@media (max-width: 979px) {
+  .feedback-form {
+    margin-left: 0;
+  }
 }
 .feedback-form button {
   margin-top: 30px;
@@ -1492,7 +1537,7 @@ hr {
 }
 @media (max-width: 979px) {
   .container {
-    max-width: 900px;
+    width: 760px;
   }
 }
 @media (max-width: 768px) {
