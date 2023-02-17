@@ -13,8 +13,6 @@
   }
 }
 
-
-
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -80,6 +78,14 @@
       background: #cccccc;
     }
   }
+  input {
+    color: $light-theme-text;
+  }
+  .big-size {
+    &:hover {
+      background: $light-theme-text;
+    }
+  }
 
   .title, .subTitle {
     color: $light-theme-text;
@@ -140,6 +146,9 @@
     span {
       background-color: #0b0b13;
       opacity: 0.5;
+      &:hover {
+        background: $green-primary;
+      }
     }
   }
   .px-btn-theme {

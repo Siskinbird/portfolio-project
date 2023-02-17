@@ -1,19 +1,17 @@
-/**-----------------------------VARIABLES--------------------------------*/
+/**================================================================================*/
+/**-----------------------------GLOBAL - VARIABLES--------------------------------*/
+/**================================================================================*/
 
 const body = document.getElementById('body');
-const themeSwitch = document.querySelector('.theme-switcher');
 const sideBar = document.getElementById('sidebar');
-const desc = document.getElementById("desc");
-const txt = 'Я — веб-разработчик, работаю с организациями разного масштаба.\n' +
-        '                            ' +
-        'Специализируюсь на создании современных веб сайтов, приложений, интернет магазинов.';
 
+/**================================================================================*/
 /**-----------------------------SCROLL BEHAVIOR--------------------------------*/
+/**================================================================================*/
 
 let anchorPoints = document.querySelectorAll('.side-link');
-
-for (let i = 0; i < anchorPoints.length; i++) {
-    anchorPoints[i].addEventListener('click', function (e) {
+for(let anchor of anchorPoints) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         const blockId = e.target.closest('a').getAttribute('href');
@@ -23,17 +21,23 @@ for (let i = 0; i < anchorPoints.length; i++) {
         });
     });
 }
-/**-----------------------------MENU ACTIVE LINK--------------------------------*/
+/**================================================================================*/
+/**-----------------------------MENU ACTIVE LINK-----------------------------------*/
+/**================================================================================*/
 
 const links = sideBar.getElementsByClassName('sidebar-head-links__link')
-for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', function () {
+for (let link of links) {
+    link.addEventListener('click', function () {
         let current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
     })
 }
+
+/**================================================================================*/
 /**-----------------------------SCROLL ACTIVE LINK--------------------------------*/
+/**================================================================================*/
+
 function activeRemover() {
     for(let link of links) {
         if(link.classList.contains('active')) {
@@ -42,7 +46,10 @@ function activeRemover() {
     }
 }
 function getBodyScrollTop() {
-    let offset = self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop);
+    let offset = self.pageYOffset
+        || (document.documentElement
+            && document.documentElement.scrollTop)
+        || (document.body && document.body.scrollTop);
     // switch (offset) {
     //     case 0 (offset > 0):
     //         activeRemover()
@@ -84,9 +91,9 @@ function getBodyScrollTop() {
 }
 window.addEventListener("scroll", getBodyScrollTop);
 
-
+/**================================================================================*/
 /**-----------------------------PRELOADER ANIMATION--------------------------------*/
-
+/**================================================================================*/
 
 // setTimeout(function() {
 //     let preloader = document.getElementById("preloader");
@@ -99,8 +106,9 @@ window.addEventListener("scroll", getBodyScrollTop);
 //     }, 1000);
 // }, 3000);
 
-/**-----------------------------WHAT'S YOU'R TIME THEME */
-
+/**================================================================================*/
+/**-----------------------------WHAT'S YOU'R TIME THEME----------------------------*/
+/**================================================================================*/
 
 const whatsTime = () => {
     let dateToDay = new Date();
@@ -115,10 +123,9 @@ const whatsTime = () => {
     }
 }
 
-
-
-/**--------------------------------BURGER ANIMATION-----------------------------------*/
-
+/**================================================================================*/
+/**--------------------------------BURGER ANIMATION--------------------------------*/
+/**================================================================================*/
 
 document.addEventListener('DOMContentLoaded', function(){
     let burger = document.querySelector('.burger');
@@ -135,12 +142,16 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 });
 
-
-/**--------------------------------ANIMATE TEXT-----------------------------------*/
-
-let i = 0;
+/**================================================================================*/
+/**--------------------------------ANIMATE TEXT------------------------------------*/
+/**================================================================================*/
 
 function typeWriter() {
+    let i = 0;
+    const desc = document.getElementById("desc");
+    const txt = 'Я — веб-разработчик, работаю с организациями разного масштаба.\n' +
+        '                            ' +
+        'Специализируюсь на создании современных веб сайтов, приложений, интернет магазинов.';
     if (i < txt.length) {
         desc.innerHTML += txt.charAt(i);
         i++;
@@ -150,10 +161,11 @@ function typeWriter() {
 
 setTimeout(typeWriter, 5000)
 
+/**================================================================================*/
+/**----------------------------------CHANGE THEME----------------------------------*/
+/**================================================================================*/
 
-/**----------------------------------CHANGE THEME-----------------------------------*/
-
-
+const themeSwitch = document.querySelector('.theme-switcher');
 
 themeSwitch.addEventListener('click', () => {
     if (localStorage.getItem('theme') === 'lightTheme') {

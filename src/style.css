@@ -840,6 +840,12 @@ button {
 .lightTheme .skill-it .skill-bar {
   background: #cccccc;
 }
+.lightTheme input {
+  color: #38384e;
+}
+.lightTheme .big-size:hover {
+  background: #38384e;
+}
 .lightTheme .title, .lightTheme .subTitle {
   color: #38384e;
 }
@@ -893,6 +899,9 @@ button {
 .lightTheme .sidebar-social span {
   background-color: #0b0b13;
   opacity: 0.5;
+}
+.lightTheme .sidebar-social span:hover {
+  background: #2fbf71;
 }
 .lightTheme .px-btn-theme {
   box-shadow: 4px 4px #0b0b13;
