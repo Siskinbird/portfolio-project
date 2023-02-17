@@ -1356,6 +1356,11 @@ button {
   font-weight: 500;
   font-size: 20px;
 }
+@media (max-width: 706px) {
+  .experience-box__item h6 {
+    margin-top: 20px;
+  }
+}
 .experience-box__item label {
   font-size: 13px;
 }
@@ -1380,17 +1385,34 @@ button {
   padding: 35px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
+@media (max-width: 706px) {
+  .experience-box__wrapper {
+    padding: 15px;
+  }
+}
 .experience-box__item-col-16 {
   flex: 0 0 16.666667%;
   max-width: 16.666667%;
   padding-right: 15px;
   padding-left: 15px;
 }
+@media (max-width: 706px) {
+  .experience-box__item-col-16 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 .experience-box__item-col-84 {
   flex: 0 0 83.333333%;
   max-width: 83.333333%;
   padding-right: 15px;
   padding-left: 15px;
+}
+@media (max-width: 706px) {
+  .experience-box__item-col-84 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 .experience-box img {
   max-width: 100%;

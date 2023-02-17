@@ -14,6 +14,9 @@
       margin-bottom: 6px;
       font-weight: 500;
       font-size: 20px;
+      @include _706 {
+        margin-top: 20px;
+      }
     }
     label {
       font-size: 13px;
@@ -39,18 +42,29 @@
   &__wrapper {
     padding: 35px;
     border-bottom: 1px solid $separator;
+    @include _706 {
+      padding: 15px;
+    }
   }
   &__item-col-16 {
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
     padding-right: 15px;
     padding-left: 15px;
+    @include _706 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
   &__item-col-84 {
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
     padding-right: 15px;
     padding-left: 15px;
+    @include _706 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
   img {
     max-width: 100%;
