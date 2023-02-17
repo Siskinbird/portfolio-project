@@ -439,6 +439,12 @@ ul {
   flex: 0 0 50%;
   max-width: 50%;
 }
+@media (max-width: 768px) {
+  .flex-50 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 
 .flex-33 {
   flex: 0 0 33.333333%;
@@ -1274,8 +1280,13 @@ button {
 .swiper-slide {
   padding: 35px;
   background: #333342;
-  max-width: 532px;
+  max-width: 50%;
   margin: 15px 25px 25px 0;
+}
+@media (max-width: 768px) {
+  .swiper-slide {
+    max-width: 100%;
+  }
 }
 
 .slide-image {
@@ -1387,7 +1398,7 @@ button {
 
 /**------------------------Light theme variables---------------------------*/
 .big-size {
-  width: 145px;
+  width: 186px;
   height: 52px;
 }
 .big-size:hover {
@@ -1403,11 +1414,22 @@ button {
   padding-bottom: 15px;
   padding-right: 20px;
 }
+@media (max-width: 768px) {
+  .service-item {
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+}
 .service-item__box {
   padding: 40px;
   overflow: hidden;
   background: #333342;
   transition: ease background 0.35s;
+}
+@media (max-width: 768px) {
+  .service-item__box {
+    padding: 20px;
+  }
 }
 .service-item__box:hover {
   background: #2fbf71;

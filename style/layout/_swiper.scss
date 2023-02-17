@@ -1,5 +1,5 @@
 @import "../variables";
-
+@import "../media";
 //TESTIMONIALS SWIPER SLIDER
 .swiper {
   margin-top: 45px;
@@ -7,8 +7,11 @@
 .swiper-slide {
   padding: 35px;
   background: $theme-sidebar-color;
-  max-width: 532px;
+  max-width: 50%;
   margin: 15px 25px 25px 0;
+  @include _768 {
+    max-width: 100%;
+  }
 
 }
 .slide-image {
