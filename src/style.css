@@ -761,6 +761,7 @@ button {
   .home-card__photo {
     width: 666px;
     height: 666px;
+    margin-top: -260px;
   }
 }
 
@@ -775,6 +776,12 @@ button {
 }
 .grid .demo {
   font-size: 32px;
+}
+@media (max-width: 1200px) {
+  .grid {
+    right: 68px;
+    top: 16px;
+  }
 }
 
 /* The switch - the box around the slider */
@@ -958,7 +965,7 @@ button {
 /**------------------------Light theme variables---------------------------*/
 .about {
   padding-top: 60px;
-  height: 600px;
+  height: auto;
   width: 100%;
 }
 .about .container {
@@ -967,6 +974,12 @@ button {
 .about-info {
   max-width: 445px;
   padding-top: 16px;
+}
+@media (max-width: 979px) {
+  .about-info {
+    max-width: 100%;
+    padding-top: 60px;
+  }
 }
 .about-info__buttons-button {
   margin-right: 30px;
@@ -1002,6 +1015,11 @@ button {
 }
 .about-info {
   padding-left: 50px;
+}
+@media (max-width: 979px) {
+  .about .container {
+    flex-direction: column;
+  }
 }
 
 /**------------------------Light theme variables---------------------------*/
@@ -1383,6 +1401,11 @@ hr {
 @media (max-width: 1200px) {
   .container {
     width: 950px;
+  }
+}
+@media (max-width: 979px) {
+  .container {
+    width: 900px;
   }
 }
 

@@ -1,17 +1,22 @@
 @import '../variables';
+@import "../media";
 
 .about {
   padding-top: 60px;
-  //padding-bottom: 180px;
-  //border-bottom: 2px solid $separator;
+
   .container {
     display: flex;
   }
-  height: 600px;
+  height: auto;
   width: 100%;
   &-info {
     max-width: 445px;
     padding-top: 16px;
+
+    @include _979 {
+      max-width: 100%;
+      padding-top: 60px;
+    }
     &__buttons {
       &-button{
         margin-right: 30px;
@@ -53,5 +58,14 @@
   }
   &-info {
     padding-left: 50px;
+    @include _979 {
+
+    }
+  }
+  @include _979 {
+    .container{
+      flex-direction: column;
+    }
+
   }
 }

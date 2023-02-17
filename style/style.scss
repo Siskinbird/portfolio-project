@@ -51,6 +51,9 @@ hr {
     @include _1200 {
         width: 950px;
     }
+    @include _979 {
+        width: 900px;
+    }
 }
 
 .main {
