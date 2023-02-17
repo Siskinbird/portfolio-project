@@ -1286,6 +1286,7 @@ button {
 @media (max-width: 768px) {
   .swiper-slide {
     max-width: 100%;
+    padding: 20px;
   }
 }
 
@@ -1416,6 +1417,11 @@ button {
 }
 .experience-box img {
   max-width: 100%;
+}
+@media (max-width: 706px) {
+  .experience-box img {
+    max-width: 31%;
+  }
 }
 
 /**------------------------Light theme variables---------------------------*/

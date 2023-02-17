@@ -68,5 +68,8 @@
   }
   img {
     max-width: 100%;
+    @include _706 {
+      max-width: 31%;
+    }
   }
 }
