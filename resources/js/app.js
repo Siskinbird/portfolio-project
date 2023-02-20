@@ -9,7 +9,7 @@ const sideBar = document.getElementById('sidebar');
 /**-----------------------------SCROLL BEHAVIOR--------------------------------*/
 /**================================================================================*/
 
-let anchorPoints = document.querySelectorAll('.side-link');
+let anchorPoints = document.querySelectorAll('.side-link, .about-info__buttons-button');
 for(let anchor of anchorPoints) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
