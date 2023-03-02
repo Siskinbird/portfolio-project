@@ -1643,4 +1643,50 @@ hr {
   }
 }
 
+/**--------------------------PORTFOLIO------------------------*/
+.portfolio .title {
+  margin-bottom: 30px;
+}
+.portfolio-filter {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.portfolio-filter li {
+  cursor: pointer;
+  margin: 0 15px;
+  color: #fff;
+  position: relative;
+  padding: 5px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.portfolio-filter li:first-child {
+  margin-left: 0;
+}
+.portfolio-filter__nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.portfolio-filter__nav .pointer:after {
+  content: "";
+  width: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 2px;
+  background: #2fbf71;
+  position: absolute;
+  -moz-transition: ease all 0.55s;
+  -o-transition: ease all 0.55s;
+  -webkit-transition: ease all 0.55s;
+  transition: ease all 0.55s;
+}
+.portfolio-filter__nav .pointer.active:after {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

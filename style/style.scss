@@ -101,3 +101,60 @@ hr {
         display: flex;
     }
 }
+/**--------------------------PORTFOLIO------------------------*/
+.portfolio {
+    .title {
+        margin-bottom: 30px;
+    }
+
+    &-filter {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        li {
+            cursor: pointer;
+            margin: 0 15px;
+            color: #fff;
+            position: relative;
+            padding: 5px 0;
+            font-size: 13px;
+            text-transform: uppercase;
+            line-height: normal;
+            letter-spacing: 2px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        &__nav {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+
+            .pointer {
+                &:after {
+                    content: "";
+                    width: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    height: 2px;
+                    background: #2fbf71;
+                    position: absolute;
+                    -moz-transition: ease all 0.55s;
+                    -o-transition: ease all 0.55s;
+                    -webkit-transition: ease all 0.55s;
+                    transition: ease all 0.55s;
+                }
+
+                &.active {
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
