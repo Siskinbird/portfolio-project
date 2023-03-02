@@ -123,11 +123,11 @@ function getBodyScrollTop() {
         activeRemover()
         links[1].classList.add('active')
     }
-    if (offset > 3000) {
+    if (offset > 2500) {
         activeRemover()
         links[2].classList.add('active')
     }
-    if (offset > 3900) {
+    if (offset > 3600) {
         activeRemover()
         links[3].classList.add('active')
     }
