@@ -157,4 +157,40 @@ hr {
             }
         }
     }
+    &-content {
+        position: relative;
+        height: 1500px;
+    }
+    &-item {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 12px;
+        width: 33.333333%;
+    }
+    &-box{
+        background: #fff;
+        position: relative;
+    }
+    &-image {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.all {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.layout {
+    position: absolute;
+    left: 33.3319%;
+    top: 0;
+}
+.apps {
+    position: absolute;
+    left: 66.6638%;
+    top: 0;
 }

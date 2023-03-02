@@ -71,3 +71,18 @@
 .j-center {
     justify-content: center;
 }
+
+
+/**Display grid*/
+
+.d-grid {
+    display: grid;
+}
+.g-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.g-gap-10 {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}

@@ -25,6 +25,18 @@ for(let anchor of anchorPoints) {
 /**-----------------------------MENU ACTIVE LINK-----------------------------------*/
 /**================================================================================*/
 
+/** Оптимизировать под переиспользование*/
+/** Получать на вход массив*/
+// function activeToggle(array) {
+//     for (let link of array) {
+//         link.addEventListener('click', function () {
+//             let current = document.getElementsByClassName("active");
+//             current[0].className = current[0].className.replace(" active", "");
+//             this.className += " active";
+//         })
+//     }
+// }
+
 const links = sideBar.getElementsByClassName('sidebar-head-links__link')
 for (let link of links) {
     link.addEventListener('click', function () {
@@ -35,9 +47,42 @@ for (let link of links) {
 }
 
 /**================================================================================*/
-/**-----------------------------SCROLL ACTIVE LINK--------------------------------*/
+/**-----------------------------PORTFOLIO ACTIVE LINK-----------------------------------*/
 /**================================================================================*/
 
+/**оптимизировать после создания портфолио*/
+/** Откровенный костыль!!!*/
+/** Получать на вход массив*/
+
+const portfolio = document.getElementById('portfolio');
+const portfolioTabs = portfolio.getElementsByClassName('pointer');
+
+for (let tab of portfolioTabs) {
+    tab.addEventListener('click', function (event) {
+        for (let i of portfolioTabs) {
+            if(i.classList.contains('active')) {
+               i.classList.remove('active')
+            }
+        }
+        if (!event.target.classList.contains('active')) {
+            event.target.classList.add('active')
+        }
+    })
+}
+
+/**================================================================================*/
+/**-----------------------------SCROLL ACTIVE LINK--------------------------------*/
+/**================================================================================*/
+// function activeRemover(array) {
+//     for(let link of array) {
+//         if(link.classList.contains('active')) {
+//             link.classList.remove('active')
+//         }
+//     }
+// }
+
+/** Оптимизировать activeRemover() для переиспользования*/
+/** Получать на вход массив*/
 function activeRemover() {
     for(let link of links) {
         if(link.classList.contains('active')) {
@@ -45,11 +90,13 @@ function activeRemover() {
         }
     }
 }
+
 function getBodyScrollTop() {
     let offset = self.pageYOffset
         || (document.documentElement
             && document.documentElement.scrollTop)
         || (document.body && document.body.scrollTop);
+    /** не работает Switch case*/
     // switch (offset) {
     //     case 0 (offset > 0):
     //         activeRemover()
@@ -94,7 +141,7 @@ window.addEventListener("scroll", getBodyScrollTop);
 /**================================================================================*/
 /**-----------------------------PRELOADER ANIMATION--------------------------------*/
 /**================================================================================*/
-
+/** Выключено до релиза*/
 // setTimeout(function() {
 //     let preloader = document.getElementById("preloader");
 //     let wrapper = document.getElementById('wrapper')
@@ -109,7 +156,8 @@ window.addEventListener("scroll", getBodyScrollTop);
 /**================================================================================*/
 /**-----------------------------WHAT'S YOU'R TIME THEME----------------------------*/
 /**================================================================================*/
-
+/** Получает локальный таймштамп*/
+/** Включает темную или светлую тему в зависимости от времени суток*/
 const whatsTime = () => {
     let dateToDay = new Date();
     let timeNow = dateToDay.getTime();

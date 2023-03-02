@@ -489,6 +489,20 @@ ul {
   justify-content: center;
 }
 
+/**Display grid*/
+.d-grid {
+  display: grid;
+}
+
+.g-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.g-gap-10 {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
 .v-icon-web, .v-icon-seo, .v-icon-hosting, .v-icon-services, .v-icon-portfolio, .v-icon-home, .v-icon-contacts, .v-icon-blogs, .v-icon-about, .v-icon-instagram, .v-icon-linkedin, .v-icon-youtube, .v-icon-git, .v-icon-telegram {
   width: 24px;
   height: 24px;
@@ -917,6 +931,9 @@ button {
 }
 .lightTheme .big-size:hover {
   background: #38384e;
+}
+.lightTheme .portfolio-filter li {
+  color: #0b0b13;
 }
 .lightTheme .title, .lightTheme .subTitle {
   color: #38384e;
@@ -1687,6 +1704,42 @@ hr {
 }
 .portfolio-filter__nav .pointer.active:after {
   width: 100%;
+}
+.portfolio-content {
+  position: relative;
+  height: 1500px;
+}
+.portfolio-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 12px;
+  width: 33.333333%;
+}
+.portfolio-box {
+  background: #fff;
+  position: relative;
+}
+.portfolio-image img {
+  max-width: 100%;
+}
+
+.all {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.layout {
+  position: absolute;
+  left: 33.3319%;
+  top: 0;
+}
+
+.apps {
+  position: absolute;
+  left: 66.6638%;
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
