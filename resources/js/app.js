@@ -6,7 +6,7 @@ const body = document.getElementById('body');
 const sideBar = document.getElementById('sidebar');
 
 /**================================================================================*/
-/**-----------------------------SCROLL BEHAVIOR--------------------------------*/
+/**-----------------------------SCROLL BEHAVIOR------------------------------------*/
 /**================================================================================*/
 
 let anchorPoints = document.querySelectorAll('.side-link, .about-info__buttons-button');
@@ -47,7 +47,7 @@ for (let link of links) {
 }
 
 /**================================================================================*/
-/**-----------------------------PORTFOLIO ACTIVE LINK-----------------------------------*/
+/**-----------------------------PORTFOLIO ACTIVE LINK------------------------------*/
 /**================================================================================*/
 
 /**оптимизировать после создания портфолио*/
@@ -84,7 +84,7 @@ for (let tab of portfolioTabs) {
 }
 
 /**================================================================================*/
-/**-----------------------------PORTFOLIO GALLERY--------------------------------*/
+/**-----------------------------PORTFOLIO GALLERY----------------------------------*/
 /**================================================================================*/
 const portfolioItem = document.getElementsByClassName('portfolio-item')
 const portfolioAll = document.getElementById("portfolio-all");
@@ -92,7 +92,7 @@ const portfolioLayout = document.getElementById("portfolio-layout");
 const portfolioApps = document.getElementById("portfolio-apps");
 
 function activate() {
-    
+
 }
 
 if(portfolioLayout.classList.contains('active')) {
