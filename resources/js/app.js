@@ -57,6 +57,8 @@ for (let link of links) {
 const portfolio = document.getElementById('portfolio');
 const portfolioTabs = portfolio.getElementsByClassName('pointer');
 
+
+
 for (let tab of portfolioTabs) {
     tab.addEventListener('click', function (event) {
         for (let i of portfolioTabs) {
@@ -64,10 +66,37 @@ for (let tab of portfolioTabs) {
                i.classList.remove('active')
             }
         }
+
+        // if(event.target === tab[1]){
+        //     portfolioItem[0].style.display = 'none';
+        //     portfolioItem[2].style.display = 'none';
+        // }else if(event.target === tab[2]) {
+        //     portfolioItem[0].style.display = 'none';
+        //     portfolioItem[1].style.display = 'none';
+        // }
+
         if (!event.target.classList.contains('active')) {
-            event.target.classList.add('active')
+            event.target.classList.add('active');
+
+
         }
     })
+}
+
+/**================================================================================*/
+/**-----------------------------PORTFOLIO GALLERY--------------------------------*/
+/**================================================================================*/
+const portfolioItem = document.getElementsByClassName('portfolio-item')
+const portfolioAll = document.getElementById("portfolio-all");
+const portfolioLayout = document.getElementById("portfolio-layout");
+const portfolioApps = document.getElementById("portfolio-apps");
+
+function activate() {
+    
+}
+
+if(portfolioLayout.classList.contains('active')) {
+    portfolioItem[3].style.display = 'none'
 }
 
 /**================================================================================*/
