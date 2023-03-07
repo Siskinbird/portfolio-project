@@ -67,13 +67,7 @@ for (let tab of portfolioTabs) {
             }
         }
 
-        // if(event.target === tab[1]){
-        //     portfolioItem[0].style.display = 'none';
-        //     portfolioItem[2].style.display = 'none';
-        // }else if(event.target === tab[2]) {
-        //     portfolioItem[0].style.display = 'none';
-        //     portfolioItem[1].style.display = 'none';
-        // }
+
 
         if (!event.target.classList.contains('active')) {
             event.target.classList.add('active');
@@ -90,14 +84,39 @@ const portfolioItem = document.getElementsByClassName('portfolio-item')
 const portfolioAll = document.getElementById("portfolio-all");
 const portfolioLayout = document.getElementById("portfolio-layout");
 const portfolioApps = document.getElementById("portfolio-apps");
+const pointer = document.getElementsByClassName('pointer')
+const portfolioFilter = document.getElementById('filter')
 
-function activate() {
+portfolioFilter.addEventListener('click', function (event) {
+        if(event.target === portfolioApps) {
+            portfolioItem[1].style.display = 'none';
+            portfolioItem[2].style.display = 'none';
+            portfolioItem[3].style.display = 'none';
+            portfolioItem[5].style.display = 'none';
+            portfolioItem[0].style.display = 'block';
+            portfolioItem[4].style.display = 'block';
+        }else if(event.target === portfolioLayout) {
+            portfolioItem[0].style.display = 'none';
+            portfolioItem[4].style.display = 'none';
+            portfolioItem[1].style.display = 'block';
+            portfolioItem[2].style.display = 'block';
+            portfolioItem[3].style.display = 'block';
+            portfolioItem[5].style.display = 'block';
+        }else if(event.target === portfolioAll) {
+            portfolioItem[0].style.display = 'block';
+            portfolioItem[1].style.display = 'block';
+            portfolioItem[2].style.display = 'block';
+            portfolioItem[3].style.display = 'block';
+            portfolioItem[4].style.display = 'block';
+            portfolioItem[5].style.display = 'block';
+        }
 
-}
+})
 
-if(portfolioLayout.classList.contains('active')) {
-    portfolioItem[3].style.display = 'none'
-}
+// function activate() {
+//
+// }
+
 
 /**================================================================================*/
 /**-----------------------------SCROLL ACTIVE LINK--------------------------------*/
