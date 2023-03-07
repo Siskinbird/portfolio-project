@@ -99,6 +99,8 @@ portfolioFilter.addEventListener('click', function (event) {
             portfolioItem[0].style.display = 'none';
             portfolioItem[4].style.display = 'none';
             portfolioItem[1].style.display = 'block';
+            portfolioItem[1].style.top = '0';
+            portfolioItem[1].style.left = '0';
             portfolioItem[2].style.display = 'block';
             portfolioItem[3].style.display = 'block';
             portfolioItem[5].style.display = 'block';
