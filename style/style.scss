@@ -106,6 +106,18 @@ hr {
     .title {
         margin-bottom: 30px;
     }
+    &-info {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 20px;
+        z-index: 1;
+        background: #333342;
+        right: 20px;
+        text-align: center;
+        opacity: 0;
+        transition: ease all .35s;
+    }
 
     &-filter {
         padding-top: 15px;
@@ -171,10 +183,36 @@ hr {
     &-box{
         background: #fff;
         position: relative;
+        &:hover {
+            .portfolio-info {
+                opacity: 1;
+            }
+            .portfolio-icon {
+                opacity: 1;
+            }
+        }
     }
     &-image {
         img {
             max-width: 100%;
+        }
+        .portfolio-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0;
+            transition: ease all 0.35s;
+            a {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                color: #fff;
+                display: inline-block;
+                vertical-align: top;
+                background: #2fbf71;
+                font-size: 24px;
+                text-align: center;
+            }
         }
     }
 }
