@@ -1,0 +1,134 @@
+@import '../variables';
+@import "../media";
+
+/**--------------------------PORTFOLIO------------------------*/
+.portfolio {
+  .title {
+    margin-bottom: 30px;
+  }
+  &-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 20px;
+    z-index: 1;
+    background: $bg-primary;
+    right: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: ease all .35s;
+  }
+
+  &-filter {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    li {
+      cursor: pointer;
+      margin: 0 15px;
+      color: $white;
+      position: relative;
+      padding: 5px 0;
+      font-size: 13px;
+      text-transform: uppercase;
+      line-height: normal;
+      letter-spacing: 2px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &__nav {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+
+      .pointer {
+        &:after {
+          content: "";
+          width: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          height: 2px;
+          background: $green-primary;
+          position: absolute;
+          -moz-transition: ease all 0.55s;
+          -o-transition: ease all 0.55s;
+          -webkit-transition: ease all 0.55s;
+          transition: ease all 0.55s;
+        }
+
+        &.active {
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &-content {
+    position: relative;
+    height: 1100px;
+  }
+  &-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 12px;
+    width: 33.333333%;
+  }
+  &-box{
+    background: $white;
+    position: relative;
+    &:hover {
+      .portfolio-info {
+        opacity: 1;
+      }
+      .portfolio-icon {
+        opacity: 1;
+      }
+    }
+  }
+  &-image {
+    img {
+      max-width: 100%;
+    }
+    .portfolio-icon {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0;
+      transition: ease all 0.35s;
+      a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        color: $white;
+        display: inline-block;
+        vertical-align: top;
+        background: $green-primary;
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+//.all {
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//}
+//.layout {
+//    position: absolute;
+//    left: 33.3319%;
+//    top: 0;
+//}
+//.apps {
+//    position: absolute;
+//    left: 66.6638%;
+//    top: 0;
+//

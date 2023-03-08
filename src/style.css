@@ -1573,6 +1573,107 @@ button {
   height: auto;
 }
 
+/**------------------------Light theme variables---------------------------*/
+/**--------------------------PORTFOLIO------------------------*/
+.portfolio .title {
+  margin-bottom: 30px;
+}
+.portfolio-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 20px;
+  z-index: 1;
+  background: #38384e;
+  right: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: ease all 0.35s;
+}
+.portfolio-filter {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.portfolio-filter li {
+  cursor: pointer;
+  margin: 0 15px;
+  color: #FFFFFF;
+  position: relative;
+  padding: 5px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.portfolio-filter li:first-child {
+  margin-left: 0;
+}
+.portfolio-filter__nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.portfolio-filter__nav .pointer:after {
+  content: "";
+  width: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 2px;
+  background: #2fbf71;
+  position: absolute;
+  -moz-transition: ease all 0.55s;
+  -o-transition: ease all 0.55s;
+  -webkit-transition: ease all 0.55s;
+  transition: ease all 0.55s;
+}
+.portfolio-filter__nav .pointer.active:after {
+  width: 100%;
+}
+.portfolio-content {
+  position: relative;
+  height: 1100px;
+}
+.portfolio-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 12px;
+  width: 33.333333%;
+}
+.portfolio-box {
+  background: #FFFFFF;
+  position: relative;
+}
+.portfolio-box:hover .portfolio-info {
+  opacity: 1;
+}
+.portfolio-box:hover .portfolio-icon {
+  opacity: 1;
+}
+.portfolio-image img {
+  max-width: 100%;
+}
+.portfolio-image .portfolio-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: ease all 0.35s;
+}
+.portfolio-image .portfolio-icon a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  display: inline-block;
+  vertical-align: top;
+  background: #2fbf71;
+  font-size: 24px;
+  text-align: center;
+}
+
 /**----------------------------------------------*/
 hr {
   box-sizing: content-box;
@@ -1658,106 +1759,6 @@ hr {
   .header-mobile {
     display: flex;
   }
-}
-
-/**--------------------------PORTFOLIO------------------------*/
-.portfolio .title {
-  margin-bottom: 30px;
-}
-.portfolio-info {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  padding: 20px;
-  z-index: 1;
-  background: #333342;
-  right: 20px;
-  text-align: center;
-  opacity: 0;
-  transition: ease all 0.35s;
-}
-.portfolio-filter {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.portfolio-filter li {
-  cursor: pointer;
-  margin: 0 15px;
-  color: #fff;
-  position: relative;
-  padding: 5px 0;
-  font-size: 13px;
-  text-transform: uppercase;
-  line-height: normal;
-  letter-spacing: 2px;
-}
-.portfolio-filter li:first-child {
-  margin-left: 0;
-}
-.portfolio-filter__nav {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-.portfolio-filter__nav .pointer:after {
-  content: "";
-  width: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  height: 2px;
-  background: #2fbf71;
-  position: absolute;
-  -moz-transition: ease all 0.55s;
-  -o-transition: ease all 0.55s;
-  -webkit-transition: ease all 0.55s;
-  transition: ease all 0.55s;
-}
-.portfolio-filter__nav .pointer.active:after {
-  width: 100%;
-}
-.portfolio-content {
-  position: relative;
-  height: 1100px;
-}
-.portfolio-item {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 12px;
-  width: 33.333333%;
-}
-.portfolio-box {
-  background: #fff;
-  position: relative;
-}
-.portfolio-box:hover .portfolio-info {
-  opacity: 1;
-}
-.portfolio-box:hover .portfolio-icon {
-  opacity: 1;
-}
-.portfolio-image img {
-  max-width: 100%;
-}
-.portfolio-image .portfolio-icon {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  opacity: 0;
-  transition: ease all 0.35s;
-}
-.portfolio-image .portfolio-icon a {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  color: #fff;
-  display: inline-block;
-  vertical-align: top;
-  background: #2fbf71;
-  font-size: 24px;
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
