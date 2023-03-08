@@ -95,22 +95,52 @@ portfolioFilter.addEventListener('click', function (event) {
             portfolioItem[5].style.display = 'none';
             portfolioItem[0].style.display = 'block';
             portfolioItem[4].style.display = 'block';
+            portfolioItem[4].style.top = '0';
+            
         }else if(event.target === portfolioLayout) {
             portfolioItem[0].style.display = 'none';
             portfolioItem[4].style.display = 'none';
+
             portfolioItem[1].style.display = 'block';
             portfolioItem[1].style.top = '0';
             portfolioItem[1].style.left = '0';
+
             portfolioItem[2].style.display = 'block';
+            portfolioItem[2].style.top = '0';
+            portfolioItem[2].style.left = '33.3319%';
+
             portfolioItem[3].style.display = 'block';
+            portfolioItem[3].style.top = '0';
+            portfolioItem[3].style.left = '66.6638%';
+
             portfolioItem[5].style.display = 'block';
+            portfolioItem[5].style.top = '28%';
+            portfolioItem[5].style.left = '0';
+
         }else if(event.target === portfolioAll) {
             portfolioItem[0].style.display = 'block';
+            portfolioItem[0].style.top = '0';
+            portfolioItem[0].style.left = '0';
+
             portfolioItem[1].style.display = 'block';
+            portfolioItem[1].style.top = '0';
+            portfolioItem[1].style.left = '33.3319%';
+
             portfolioItem[2].style.display = 'block';
+            portfolioItem[2].style.top = '0';
+            portfolioItem[2].style.left = '66.3338%';
+
             portfolioItem[3].style.display = 'block';
+            portfolioItem[3].style.top = '51%';
+            portfolioItem[3].style.left = '0';
+
             portfolioItem[4].style.display = 'block';
+            portfolioItem[4].style.top = '27%';
+            portfolioItem[4].style.left = '33.3319%';
+
             portfolioItem[5].style.display = 'block';
+            portfolioItem[5].style.top = '58%';
+            portfolioItem[5].style.left = '66.3338%';
         }
 
 })
